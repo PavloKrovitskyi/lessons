@@ -338,7 +338,7 @@ body {
   background-color: #333333;
   border-radius: 50%;
 }
-.enter-emeil__btn{
+.enter-emeil__btn {
   position: relative;
 }
 .enter-emeil__btn::after {
@@ -352,6 +352,12 @@ body {
   background-image: url(../img/svg/decoration-form.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  transition: all 0.4s;
+}
+.enter-emeil__btn:hover::after {
+  transform: translateY(20px);
+  background-color: #2c377877;
+  border-radius: 5px;
 }
 .enter-emeil__area-input:focus {
   outline: none;
