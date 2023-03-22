@@ -338,15 +338,19 @@ body {
   background-color: #333333;
   border-radius: 50%;
 }
-.enter-emeil__descr::after {
+.enter-emeil__btn{
+  position: relative;
+}
+.enter-emeil__btn::after {
   content: "";
-  width: 24px;
-  height: 14px;
+  width: 100px;
+  height: 44px;
   position: absolute;
-  bottom: -20px;
-  right: -64px;
-  z-index: 2;
+  bottom: 80px;
+  right: -475px;
+  z-index: 5;
   background-image: url(../img/svg/decoration-form.svg);
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 .enter-emeil__area-input:focus {
