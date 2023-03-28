@@ -229,7 +229,7 @@ main {
 .shipping-address__decoration-line {
   margin-bottom: 39px;
 }
-.main__decoration-line{
+.main__decoration-line {
   margin-bottom: 39px;
 }
 .decoration-line {
@@ -456,6 +456,9 @@ main {
 .item-block__area-input:focus {
   outline: 1px solid #3056d3;
 }
+.item-block__area-input:valid {
+  border: 1px solid #3056d3;
+}
 .item-block__area-input:hover + .lable,
 .item-block__area-input:focus + .lable {
   transform: translateY(-26px);
@@ -469,6 +472,7 @@ main {
 }
 .item-block__area-input:valid + .lable {
   transform: translateY(-26px);
+  border: 1px solid #3056d3;
 }
 .item-block__area-input {
   background: #ffffff;
