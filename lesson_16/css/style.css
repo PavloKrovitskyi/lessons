@@ -202,13 +202,10 @@ main {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #000000;
-  border: 4px solid transparent;
   transition: all 0.3s;
 }
 .button:hover {
-  background-color: #fff;
-  color: black;
-  border: 4px solid #c4c4c4;
+  background-color: #eb5757;
 }
 .buttons__login {
   margin-right: 12px;
@@ -401,6 +398,9 @@ main {
   top: -20%;
   right: -48.5%;
 }
+.wrapper__next-page-link-element:hover {
+  background: #eb5757;
+}
 @keyframes go-next {
   0% {
     top: -5px;
@@ -569,16 +569,11 @@ main {
 .checkbox-block__item:hover .checkbox-block__checkbox-lable::before {
   background-color: #ccc;
 }
-
 /* Змінюємо колір коли checkbox вибраний */
 .checkbox-block__area-input:checked ~ .checkbox-block__checkbox-lable::after {
   visibility: visible;
 }
 
-.form__cupon-block {
-}
-.cupon-block {
-}
 .cupon-block__title-cupon {
   font-weight: 600;
   font-size: 20px;
@@ -587,11 +582,10 @@ main {
   margin-bottom: 25px;
 }
 .cupon-block__input {
+  max-width: 480px;
 }
-.item-block {
-}
-.item-block__area-input--height {
-  height: 48px;
+.item-block__area-input--width {
+  flex: 0 0 67.708%;
   margin-right: 20px;
 }
 .cupon-block__button {
@@ -601,6 +595,9 @@ main {
   min-height: 48px;
   color: #ffffff;
   padding: 10px;
+  flex: 0 0 28.125%;
+  transition: background-color 0.3s;
 }
-.button-submit-form {
+.cupon-block__button:hover{
+  background-color: #eb5757;
 }
