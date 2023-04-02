@@ -699,20 +699,19 @@ main {
   text-transform: uppercase;
   color: black;
   width: 80px;
-  height: 80px;
+  height: 60px;
   z-index: 6;
   background: url(../img/icon-arrow.png) 100% 70% no-repeat;
   transform: rotate(90deg);
   position: absolute;
   top: -45%;
-  right: -50%;
+  right: -40%;
   z-index: 2;
 }
 .link-element::after {
   content: "";
-
   width: 30px;
-  height: 80px;
+  height: 60px;
   z-index: 6;
   background: url(../img/icon-arrow.png) 0 65% no-repeat;
   transform: rotate(90deg);
@@ -720,7 +719,7 @@ main {
   transition: all 0.4s;
   position: absolute;
   top: -100%;
-  right: -35%;
+  right: -25.5%;
   z-index: 1;
 }
 .wrapper__next-page-link-element:hover {
@@ -753,7 +752,7 @@ main {
 }
 @media (max-width: 768.98px) {
   .wrapper__next-page-link-element {
-    top: 125px;
+    top: 127px;
     right: 30px;
     font-size: 16px;
     transform: rotate(0deg);
@@ -786,13 +785,13 @@ main {
 }
 @media (max-width: 709.98px) {
   .wrapper__next-page-link-element {
-    top: 152px;
+    top: 154px;
     right: 20px;
   }
 }
 @media (max-width: 548.98px) {
   .wrapper__next-page-link-element {
-    top: 148px;
+    top: 149px;
     right: 20px;
   }
 }
