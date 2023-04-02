@@ -3,7 +3,7 @@
 
 .wrapper {
   min-height: 100%;
-  overflow: hidden;
+  overflow: clip;
 
   display: flex;
   flex-direction: column;
@@ -693,8 +693,12 @@ main {
   transition: all 0.4s;
 }
 .link-element::before {
-  content: "";
-  width: 100px;
+  content: "go-go";
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  width: 80px;
   height: 80px;
   z-index: 6;
   background: url(../img/icon-arrow.png) 100% 70% no-repeat;
@@ -702,14 +706,12 @@ main {
   position: absolute;
   top: -45%;
   right: -50%;
+  z-index: 2;
 }
 .link-element::after {
-  content: "go-go";
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  width: 100px;
+  content: "";
+
+  width: 30px;
   height: 80px;
   z-index: 6;
   background: url(../img/icon-arrow.png) 0 65% no-repeat;
@@ -717,8 +719,9 @@ main {
   animation: go-next 2s linear infinite;
   transition: all 0.4s;
   position: absolute;
-  top: -20%;
-  right: -48.5%;
+  top: -100%;
+  right: -35%;
+  z-index: 1;
 }
 .wrapper__next-page-link-element:hover {
   background: #eb5757;
@@ -726,13 +729,13 @@ main {
 
 @keyframes go-next {
   0% {
-    top: -5px;
+    top: -35px;
   }
   50% {
-    top: 25px;
+    top: 00px;
   }
   100% {
-    top: -5px;
+    top: -35px;
   }
 }
 
@@ -757,12 +760,12 @@ main {
   }
   .link-element::before {
     top: -50px;
+    font-size: 15px;
     right: 0;
     height: 55px;
     transform: rotate(0deg);
   }
   .link-element::after {
-    font-size: 15px;
     top: -130%;
     right: 0px;
     height: 55px;
@@ -771,13 +774,13 @@ main {
 
   @keyframes go-next {
     0% {
-      right: 15px;
+      right: 75px;
     }
     50% {
-      right: -45px;
+      right: 0px;
     }
     100% {
-      right: 15px;
+      right: 75px;
     }
   }
 }
@@ -804,22 +807,22 @@ main {
     top: -42px;
     right: 0;
     height: 45px;
+    font-size: 12px;
   }
   .link-element::after {
-    font-size: 12px;
     top: -41px;
     right: -7px;
     height: 45px;
   }
   @keyframes go-next {
     0% {
-      right: -15px;
+      right: 55px;
     }
     50% {
-      right: -45px;
+      right: 0px;
     }
     100% {
-      right: -15px;
+      right: 55px;
     }
   }
 }
