@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Homework №17</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+
+
+    <header class="header">
+      <div class="header__container">
+
+        <div class="header__logo logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+
+        <div class="header__menu menu">
+          <div class="menu__burger-icon"></div>
+          <ul class="menu__items menu__items--burger">
+            <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Sale</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">contact us</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link--search-icon">search</a></li>
+          </ul>
+        </div>
+
+        <div class="header__sidebar sidebar">
+          <div class="sidebar__menu menu">
+
+            <ul class="menu__items menu__items--gap">
+              <li class="menu__item"><a href="#" class="menu__link">SIGN IN</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">CREATE AN ACCOUNT</a></li>
+              <li class="menu__item menu__item--border"><a href="#" class="menu__link"><img src="img/favorite-icon.svg" alt="favorite-icon"></a></li>
+              <li class="menu__item menu__item--border user-bar"><a href="#" class="menu__link"><img src="img/basket-icon.svg" alt="basket-icon"></a>
+                <div class="user-bar-body">
+                  <div class="user-bar__link-shopping-cart">
+                    <a href="#">
+                      Shopping Cart
+                      <div class="user-bar__total-cost">
+                        <span>0,00 EUR</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+
+        <form class="main__form shipping-address" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+          <h2 class="shipping-address__title title">Shipping Address</h2>
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__email-lable lable-important" for="email01">Email Address</label>
+            <input class="input-block__area-input" type="email" name="email-address" placeholder="roni_cost@example.com" id="email01" required>
+          </div>
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__lable-password" for="password">Password</label>
+            <input class="input-block__area-input" type="password" name="password" placeholder="******************" id="password" minlength="6">
+          </div>
+
+          <div class="shipping-address__block shipping-address__block--margin input-block">
+            <label class="input-block__postal-code-lable" for="zip-postal-code">Zip/Postal Code</label>
+            <input class="input-block__area-input" type="text" name="zip-postal-code" id="zip-postal-code" minlength="5">
+          </div>
+
+          <div class="shipping-address__sign-in-text">
+            You already have an account with us. Sign in or continue as guest.
+          </div>
+          <div class="shipping-address__buttons buttons">
+            <input class="buttons__login button" type="submit" value="login">
+            <a class="buttons__forgot-pass" href="#">Forgot Your Password?</a>
+          </div>
+
+        </form>
+
+        <hr class="main__decoration-line decoration-line">
+
+        <form class="main__form shipping-address" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__first-name-lable lable-important" for="first-name">First Name</label>
+            <input class="input-block__area-input" type="text" name="first-name" id="first-name" required>
+          </div>
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__last-name-lable lable-important" for="last-name">Last Name</label>
+            <input class="input-block__area-input" type="text" name="last-name" id="last-name" required>
+          </div>
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__company-lable" for="company">Company</label>
+            <input class="input-block__area-input" type="text" name="company" id="company">
+          </div>
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__last-name-lable lable-important" for="street-address01">Street Address</label>
+            <div class="input-block__group-input">
+              <input class="input-block__area-input" type="text" name="street-address01" id="street-address01" required>
+              <input class="input-block__area-input" type="text" name="street-address02" id="street-address02">
+              <input class="input-block__area-input" type="text" name="street-address03" id="street-address03">
+            </div>
+          </div>
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__country-lable lable-important" for="country">Country</label>
+            <input class="input-block__area-input" type="text" name="country" id="country" required>
+          </div>
+
+          <div class="shipping-address__block input-block">
+            <label class="input-block__state-province-lable lable-important" for="state-province">State/Province</label>
+            <select class="input-block__area-input select-state-province" name="state" id="state-province" required>
+              <option value="" disabled selected class="select-state-province__option">Please select a region</option>
+              <option value="Kyiv" class="select-state-province__option">Київ - Kyiv</option>
+              <option value="Vinnytsia" class="select-state-province__option">Вінниця - Vinnytsia</option>
+              <option value="Lutsk" class="select-state-province__option">Луцьк - Lutsk</option>
+              <option value="Dnipro" class="select-state-province__option">Дніпро - Dnipro</option>
+              <option value="Donetsk" class="select-state-province__option">Донецьк - Donetsk</option>
+              <option value="Zhytomy" class="select-state-province__option">Житомир - Zhytomyr</option>
+              <option value="Uzhhorod" class="select-state-province__option">Ужгород - Uzhhorod</option>
+              <option value="Zaporizhzhia" class="select-state-province__option">Запоріжжя - Zaporizhzhia</option>
+              <option value="Ivano-Frankivsk" class="select-state-province__option">Івано-Франківськ - Ivano-Frankivsk</option>
+              <option value="Kropyvnytskyi" class="select-state-province__option">Кропивницький - Kropyvnytskyi</option>
+              <option value="Luhansk" class="select-state-province__option">Луганськ - Luhansk</option>
+              <option value="Lviv" class="select-state-province__option">Львів - Lviv</option>
+              <option value="Mykolaiv" class="select-state-province__option">Миколаїв - Mykolaiv</option>
+              <option value="Odesa" class="select-state-province__option">Одеса - Odesa</option>
+              <option value="Poltava" class="select-state-province__option">Полтава - Poltava</option>
+              <option value="Rivne" class="select-state-province__option">Рівне - Rivne</option>
+              <option value="Sumy" class="select-state-province__option">Суми - Sumy</option>
+              <option value="Ternopil" class="select-state-province__option">Тернопіль - Ternopil</option>
+              <option value="Kharkiv" class="select-state-province__option">Харків - Kharkiv</option>
+              <option value="Kherson" class="select-state-province__option">Херсон - Kherson</option>
+              <option value="Khmelnytskyi" class="select-state-province__option">Хмельницький - Khmelnytskyi</option>
+              <option value="Cherkasy" class="select-state-province__option">Черкаси - Cherkasy</option>
+              <option value="Chernivtsi" class="select-state-province__option">Чернівці - Chernivtsi</option>
+              <option value="Chernihiv" class="select-state-province__option">Чернігів - Chernihiv</option>
+            </select>
+          </div>
+
+          <h2 class="shipping-address__title title">Shipping Methods</h2>
+
+          <div class="shipping-address__methods methods">
+            <div class="methods__body">
+              <div class="methods__radio-option radio-option">
+                <div class="radio-option__item item-radio">
+                  <input class="item-radio__area-input" type="radio" name="shipping-method" value="$5.00" id="shipping-method01" checked required>
+                  <label class="item-radio__shipping-method-lable" for="shipping-method01">$5.00</label>
+                </div>
+                <div class="radio-option__description">Fixed</div>
+                <div class="radio-option__description">Flat Rate</div>
+              </div>
+
+              <div class="methods__radio-option methods__radio-option--border-top radio-option">
+                <div class="radio-option__item item-radio">
+                  <input class="item-radio__area-input" type="radio" name="shipping-method" value="$10.00" id="shipping-method02" required>
+                  <label class="item-radio__shipping-method-lable" for="shipping-method02">$10.00</label>
+                </div>
+                <div class="radio-option__description">Table Rate</div>
+                <div class="radio-option__description">Best Way</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shipping-address__block-buttons">
+            <input class="shipping-address__button-submit button" value="next" type="submit">
+            <input class="shipping-address__button-reset button" value="Back" type="reset">
+          </div>
+
+        </form>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content content">
+          <div class="content__row">
+            <div class="content__item">Free Shipping</div>
+            <div class="content__item">Customer Love</div>
+            <div class="content__item">Easy Returns</div>
+            <div class="content__item">Secure Payment</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="wrapper__link-element-next-page">
+      <a class="wrapper__next-page-link-element link-element" href="next-page.html">
+        next page
+      </a>
+    </div>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
