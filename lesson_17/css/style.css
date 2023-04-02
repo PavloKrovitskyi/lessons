@@ -178,6 +178,9 @@ main {
   .menu__link:hover:after {
     width: 0%;
   }
+  .menu__link:hover {
+    transform: scale(1.15);
+  }
 }
 @media (max-width: 1620px) {
   .header__logo {
