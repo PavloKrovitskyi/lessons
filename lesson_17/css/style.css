@@ -334,6 +334,10 @@ main {
     font-weight: 500;
     margin-bottom: 25px;
   }
+  .menu__items--visible {
+    top: 40px;
+    right: 250%;
+  }
 }
 
 /* main */
