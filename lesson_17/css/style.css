@@ -171,10 +171,9 @@ main {
 .menu__burger-icon.active:after {
   background-color: #fff;
 }
-@media (hover: hover) {
-  .logo img:hover,
-  .menu__link:hover {
-    transform: none;
+@media (any-hover: hover) {
+  .logo img:hover {
+    transform: scale(1.15) translateX(20px);
   }
   .menu__link:hover:after {
     width: 0%;
@@ -412,6 +411,7 @@ main {
   color: #ffffff;
   background-color: #000000;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #eb5757;
@@ -537,7 +537,7 @@ main {
   background-color: #fff;
   border: 2px solid #828282;
 }
-@media (hover: hover) {
+@media (any-hover: hover) {
   .shipping-address__button-reset:hover {
     background-color: #fff;
     border: 2px solid #828282;
@@ -738,7 +738,7 @@ main {
   }
 }
 
-@media (hover: hover) {
+@media (any-hover: hover) {
   .wrapper__next-page-link-element:hover {
     background: #eb5757;
   }
@@ -1035,7 +1035,7 @@ main {
 }
 /* ========================================== */
 /* all hover page2 */
-@media (hover: hover) {
+@media (any-hover: hover) {
   .item-block__area-input:hover + .lable,
   .item-block__area-input:focus + .lable {
     transform: translateY(-26px);
