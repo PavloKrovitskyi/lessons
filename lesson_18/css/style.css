@@ -206,6 +206,7 @@ body {
   .menu-sidebar__item:hover .menu-sidebar__link {
     color: #495057;
   }
+
   .menu-sidebar__item:hover .menu-sidebar__link--btn {
     background-color: #f08843de;
     color: white;
@@ -580,6 +581,7 @@ img {
   font-size: 16px;
   line-height: 156%;
   color: #212529;
+  transition: color 0.3s;
 }
 .cards__text {
   flex-grow: 1;
@@ -626,7 +628,11 @@ img {
   .page-number__item:hover .page-number__link {
     color: #495057;
   }
+  .cards__title:hover {
+    color: #ccd5ae;
+  }
 }
+
 @media (max-width: 950px) {
   .block-information {
     flex: 1 1 70%;
@@ -723,6 +729,7 @@ img {
 .naw__item {
   color: #c4c4c4;
   transition: color 0.3s;
+  font-weight: 500;
 }
 .gallery__body {
   display: flex;
