@@ -176,12 +176,14 @@ body {
 }
 .menu-sidebar__item {
   align-self: center;
+  transition: all 0.3s;
 }
 .menu-sidebar__link--btn {
   color: #f8f9fa;
   background: #ddbea9;
   padding: 8px 16px;
   border-radius: 20px;
+  transition: all 0.3s;
 }
 .menu-burger {
   display: none;
@@ -205,6 +207,7 @@ body {
 
   .menu-sidebar__item:hover .menu-sidebar__link {
     color: #495057;
+    transition: all 0.3s;
   }
 
   .menu-sidebar__item:hover .menu-sidebar__link--btn {
@@ -352,6 +355,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.384);
     border-radius: 20px;
     padding: 1px 7px;
+    transition: all 0.3s;
   }
   .menu__sidebar-item--btn {
     padding: 2px 8px;
