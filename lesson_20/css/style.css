@@ -710,7 +710,7 @@ main {
   left: 0;
   width: 11px;
   height: 11px;
-  background: black url(/img/icons/checked-icon.svg) 50% 50% no-repeat;
+  background: black url(../img/icons/checked-icon.svg) 50% 50% no-repeat;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
