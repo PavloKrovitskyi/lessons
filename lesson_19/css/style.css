@@ -724,7 +724,7 @@ body {
   }
   .main {
     padding-top: 130px;
-    padding-bottom: 60;
+    padding-bottom: 60px;
   }
   .main__block-cards {
     padding: 10px 0 30px;
@@ -993,9 +993,11 @@ body {
   width: 30px;
   height: 30px;
   background: url(../img/tail-grids-image/arrow-grey-left.png) 40% 45% no-repeat;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 .item-left:hover:before {
-  background: url(../img/tail-grids-image/arrow-white-left.png) 45% 45% no-repeat;
+  background: url(../img/tail-grids-image/arrow-white-left.png) 40% 45% no-repeat;
 }
 .item-right::before {
   content: "";
@@ -1006,6 +1008,8 @@ body {
   width: 30px;
   height: 30px;
   background: url(../img/tail-grids-image/arrow-grey-right.png) 45% 45% no-repeat;
+  transition: all 0.8s;
+  cursor: pointer;
 }
 .item-right:hover:before {
   background: url(../img/tail-grids-image/arrow-white-right.png) 45% 45% no-repeat;
@@ -1739,7 +1743,7 @@ body {
   font-weight: 600;
   line-height: 143%;
   transition: all 0.3s;
-  width: 111px;
+  min-width: 111px;
   min-height: 36px;
   align-self: center;
 }
