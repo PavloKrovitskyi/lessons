@@ -397,6 +397,9 @@ main {
   &__details--position {
     justify-content: flex-end;
     align-items: flex-start;
+    @media (max-width: em(768.98)) {
+      padding-bottom: rem(100);
+    }
   }
   &__details--text-color {
     color: black;

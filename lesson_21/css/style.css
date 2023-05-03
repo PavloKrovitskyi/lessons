@@ -518,6 +518,11 @@ main {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 48.06125em) {
+  .slide__details--position {
+    padding-bottom: 6.25rem;
+  }
+}
 .slide__details--text-color {
   color: black;
 }
