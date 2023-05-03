@@ -995,12 +995,20 @@ main {
   }
 }
 .world-item {
+  @media (max-width: em(425.98)) {
+    background-color: rgba(229, 229, 229, 0.7);
+    padding: rem(10);
+    border-radius: rem(5);
+  }
   &__image {
     margin-bottom: rem(30);
     position: relative;
     overflow: hidden;
     padding-bottom: 69.686411%; /* 200/287 */
     border-radius: rem(3);
+    @media (max-width: em(425.98)) {
+      margin-bottom: rem(10);
+    }
     & img {
       position: absolute;
       top: 0;
@@ -1034,6 +1042,9 @@ main {
 
   &__date {
     margin-bottom: rem(15);
+    @media (max-width: em(425.98)) {
+      margin-bottom: rem(5);
+    }
   }
 
   &__title {
@@ -1043,6 +1054,9 @@ main {
     line-height: 1.56;
     color: #212529;
     transition: color 0.3s ease-out;
+    @media (max-width: em(425.98)) {
+      margin-bottom: rem(5);
+    }
     @media (any-hover: hover) {
       &:hover {
         color: #ccd5ae;
