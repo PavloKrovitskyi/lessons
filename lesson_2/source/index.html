@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<html lang="zxx">
+	<head>
+		<!-- Кодування шрифту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 2</title>
+	</head>
+	<body>
+		<!-- Коментар (Контрол + крапка) -->
+
+		<!-- HTML-тег -->
+		<!-- Будова (анатомія) HTML-тегу -->
+
+		<!-- Тег з зачиняючим елементом -->
+		<!-- 
+			<назва_тегу> 
+				Наповнення тегу (інші теги, контент)
+			</назва_тегу>
+		 -->
+		<!-- Тег без зачиняючого елементу -->
+		<!--
+			<назва_тегу>
+		-->
+
+		<!-- Тег з атрибутами -->
+		<!-- Атрибутів може бути скільки завгодно -->
+		<!-- 
+			<назва_тегу назва_атрибуту="значення атрибуту" назва_атрибуту_2="значення атрибуту"> 
+				Наповнення тегу (інші теги, контент)
+			</назва_тегу>
+			або
+			<назва_тегу назва_атрибуту="значення атрибуту">
+		 -->
+
+		<!-- Теги для будівництва (будівельні) -->
+
+		<!-- DIV - Будівельний тег БЕЗ конкретного призначення -->
+		<div>
+			<!-- Наповнення тегу -->
+		</div>
+		<!-- HEADER - Будівельний тег для побудови верхньої частини сайту\блоку -->
+		<header>
+			<!-- Наповнення тегу -->
+		</header>
+		<!-- FOOTER - Будівельний тег для побудови нижньої частини сайту\блоку -->
+		<footer>
+			<!-- Наповнення тегу -->
+		</footer>
+		<!-- MAIN - Будівельний тег для побудови головної частини сайту (має бути лише один на сторінці) -->
+		<main>
+			<!-- Наповнення тегу -->
+		</main>
+
+		<!-- Стандартна конструкція сайту -->
+		<header></header>
+		<main></main>
+		<footer></footer>
+
+		<!-- Будівельні теги ніяк не змінюють контент -->
+		<!-- 
+		Текст
+		<div>Текст</div>
+		<header>Текст</header>
+		<main>Текст</main>
+		<footer>Текст</footer>
+		 -->
+
+		<!-- Теги для контенту (контентні) -->
+		<!-- Контентні теги можуть змінювати контент -->
+
+		<!-- H1-H6 Теги для заголовків -->
+		<h1>Заголовок №1</h1> <!-- Лише один на сторінці -->
+		<h2>Заголовок №2</h2>
+		<h3>Заголовок №3</h3>
+		<h4>Заголовок №4</h4>
+		<h5>Заголовок №5</h5>
+		<h6>Заголовок №6</h6>
+
+		<!-- P - тег параграфу -->
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorem iure quam fuga animi illo natus, laborum non doloribus consequuntur culpa magnam officiis voluptatem dolor veritatis nisi, praesentium a quia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorem iure quam fuga animi illo natus, laborum non doloribus consequuntur culpa magnam officiis voluptatem dolor veritatis nisi, praesentium a quia.
+		</p>
+
+		<!-- MARK та SPAN - виділення слова(ів) -->
+		<p>
+			Lorem <span>ipsum</span> <mark>dolor</mark> sit amet consectetur adipisicing elit. Incidunt dolorem iure quam fuga animi illo natus, laborum non doloribus consequuntur culpa magnam officiis voluptatem dolor veritatis nisi, praesentium a quia.
+		</p>
+
+		<!-- BR - перериває рядок тексту -->
+		<p>
+			Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Incidunt dolorem iure quam fuga animi illo natus, laborum non doloribus consequuntur culpa magnam officiis voluptatem dolor veritatis nisi, praesentium a quia.
+		</p>
+
+		<!-- UL+LI Маркований список -->
+		<ul>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+		</ul>
+
+		<!-- OL+LI Нумерований список -->
+		<ol>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+		</ol>
+
+		<!-- Вкладенність списків -->
+		<ul>
+			<li>
+				Пункт списку
+				<ul>
+					<li>ПідПункт списку</li>
+					<li>
+						ПідПункт списку
+						<ol>
+							<li>ПідПідПункт списку</li>
+							<li>ПідПідПункт списку</li>
+							<li>ПідПідПункт списку</li>
+						</ol>
+					</li>
+					<li>ПідПункт списку</li>
+				</ul>
+			</li>
+			<li>
+				Пункт списку
+			</li>
+			<li>
+				Пункт списку
+			</li>
+			<li>
+				Пункт списку
+			</li>
+		</ul>
+
+		<!-- IMG - вивід зображення -->
+		<!-- 
+			Атрибути:
+			src - шлях до зображення (файлу)
+			alt - альтернативний текст
+		 -->
+		<img src="img/01.png" alt="Будівництво">
+
+		<!-- A - гіпертекстове посилання -->
+		<!-- <a href="адреса">Текст (анкор)</a> -->
+		<p><a href="contacts.html">Я посилання</a></p>
+		<!--  Атрибут target - встановлює де саме має відкритись адреса -->
+		<p><a target="_blank" href="contacts.html">Я посилання</a></p>
+		<p>
+			<a href="#p-1" class="link">Хочу вниз до тексту</a>
+		</p>
+
+		<!-- Часті атрибути -->
+		<!-- 
+			CLASS - додає клас(класи) 
+			ім'я класів пишемо латиницею, 
+			у нижньому регістрі, 
+			пробіл замінюємо на дефіс
+		-->
+		<!-- DIV з класом block -->
+		<div class="block"></div>
+
+		<!-- 
+			TITLE - підказка
+		 -->
+		<p title="Я текст" class="text">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis illo officia aut perferendis voluptatibus recusandae magnam animi tempore reiciendis rerum. Earum at quos voluptates minima tempora sapiente officia, accusamus obcaecati?
+			Aliquam architecto ratione quasi, eveniet perspiciatis, nesciunt molestiae quia voluptates reiciendis harum iusto natus molestias unde? Debitis similique quisquam quasi atque ullam veniam minima itaque ut. Aspernatur laboriosam aperiam incidunt!
+			Unde perferendis illo sed hic laborum nostrum at tempora, expedita nihil animi repellat odit recusandae dignissimos veniam, maxime explicabo aperiam iste officia fugit, distinctio accusamus labore harum. Accusamus, tempore fugit?
+			Officia nostrum quae, et perferendis deserunt expedita praesentium fuga molestias dolor ea, aliquid eius odit, itaque aperiam quibusdam repudiandae. Aut, reprehenderit consequatur! Minus similique tempora atque explicabo quae sequi nisi!
+			Impedit dolor vero vitae assumenda, odit eaque libero exercitationem quod doloremque veritatis? Aperiam asperiores voluptas in id animi quas? Eaque ab molestias, ullam cum ducimus at facere et quis ratione!
+			Cupiditate, nihil quis accusamus deserunt a saepe unde at et dicta accusantium aliquid, eius praesentium! Placeat, quibusdam. Unde, laborum ad? Hic doloremque veritatis illum, dolores quod nulla expedita facere repellendus!
+			Voluptates unde incidunt deleniti possimus pariatur cupiditate maxime quas impedit aspernatur quod, doloremque ut animi, alias accusamus harum? Perspiciatis reiciendis vel animi! Sint tempora molestiae blanditiis sequi saepe explicabo recusandae?
+			Atque, excepturi iure omnis nemo eveniet eligendi vitae, totam pariatur velit asperiores neque corporis quam repudiandae aut distinctio a necessitatibus! Tempora sequi minus libero quaerat beatae eligendi, non unde incidunt.
+			Veniam explicabo optio qui est architecto quis unde deleniti sapiente culpa quibusdam voluptate minus, obcaecati fugit recusandae amet sed maiores non maxime. Atque adipisci rem necessitatibus consectetur, aperiam accusantium beatae.
+			Omnis consequuntur laboriosam quod nulla eveniet maiores quae voluptatum praesentium. Quasi odio doloribus est excepturi facilis incidunt inventore provident iure laboriosam. Vitae, libero perferendis nulla voluptate iste suscipit. Beatae, voluptatem?
+			Totam dolore magni voluptatibus! Autem omnis saepe laboriosam amet vitae aut nisi dolores quam, laborum deleniti sequi officia ad dolorem possimus? Quidem modi distinctio nostrum nulla hic corrupti doloremque tenetur.
+			Nam, omnis corporis inventore voluptate vel maiores eum repellendus temporibus id aliquid possimus earum facilis voluptatem tempora totam non hic assumenda? Corporis fuga eligendi neque dolorum iste perferendis maxime pariatur.
+			Eius ipsam nemo fuga minima consectetur exercitationem sapiente commodi placeat inventore fugiat qui suscipit, adipisci facilis! Enim architecto harum recusandae officia non dignissimos, dolorem consectetur porro facilis, nisi ipsum iusto!
+			Voluptate molestiae ipsam corporis eos libero ullam recusandae quo autem repellat at totam eveniet esse, molestias dolorem vitae hic ipsum alias consequatur voluptates necessitatibus odit? Voluptatem optio ipsam aspernatur maxime?
+			Dolor ex neque quos cum ea omnis praesentium repudiandae, vero minima! Perferendis pariatur ratione minus fugiat amet quos eos, consequuntur doloremque reiciendis ipsam incidunt quam corrupti autem officia quo corporis?
+			Omnis ipsam unde ea esse veniam, magnam, animi commodi illum qui consequuntur eius eum. Corrupti quasi veritatis tempora itaque consequatur, praesentium velit voluptatibus earum enim et dolorem impedit sapiente dolorum!
+			Voluptas provident molestiae in accusantium nihil, facilis culpa et possimus debitis iure saepe optio quia aperiam nisi velit voluptates expedita totam excepturi, distinctio repellendus rerum necessitatibus doloribus veniam. Odit, molestiae.
+			Velit, ab repellendus officia ipsum dolores dolorum aliquam dolore dignissimos saepe. Illo ex at deserunt magnam blanditiis sint? Adipisci dolorem voluptatem vitae blanditiis magnam nobis, a nulla dolores ab distinctio!
+			Pariatur cumque minima laudantium culpa incidunt tempore, doloremque mollitia est omnis commodi voluptatem, dolore non, magnam nulla? Deleniti error alias facere aliquid maiores necessitatibus blanditiis voluptas sit rerum? Sapiente, eum.
+			A magni similique aut maiores, ducimus perspiciatis ea voluptates praesentium dicta distinctio architecto itaque illo rerum cupiditate perferendis fugit velit porro possimus dolorem consequuntur. Iusto nesciunt aut illo sunt? Sequi.
+			Nam, tenetur reiciendis hic laborum dolorum similique voluptatem a maiores magnam iusto est, praesentium, natus impedit repudiandae dolor earum facilis. Dolorum vero molestias quam alias mollitia voluptatibus omnis praesentium officia.
+			Et, repellendus alias. Tempore, minima quia esse, commodi nobis enim repellendus quam quas nulla recusandae magni molestiae iste incidunt vel doloremque error veritatis et vitae. Error quod ut repellendus quasi.
+			Unde minus ipsa accusamus esse doloribus veniam maiores facilis consectetur, expedita perspiciatis velit sapiente neque magni illum ipsum amet reiciendis consequuntur laudantium? Laboriosam perspiciatis eligendi dicta repellat ipsa quidem eveniet!
+			Quam qui ipsum dicta rem numquam aliquam optio sit accusantium quaerat amet distinctio dignissimos doloribus architecto, ratione, fuga atque vel molestiae inventore deleniti et similique vitae. Modi velit quisquam beatae?
+			Quasi eos veritatis blanditiis vitae nostrum molestias, natus ab iste, quisquam maiores unde repellendus quas nisi dolore possimus beatae tenetur dolor, quod minus modi doloribus aliquam magnam magni. Soluta, amet.
+			Impedit maiores voluptatum dolor. Dolorum dolore molestias quos consectetur voluptate harum praesentium soluta? Fugit rerum ipsam quas. Quasi obcaecati eum nihil aspernatur nam excepturi a rem soluta, adipisci, inventore similique.
+			Qui odit, neque pariatur hic minus iusto reiciendis? Magni porro maxime sapiente nihil veritatis nobis mollitia fugiat, placeat quae explicabo nisi nulla, atque expedita in iusto corrupti. Consequuntur, necessitatibus amet!
+			Inventore asperiores delectus praesentium minus, dicta perferendis hic impedit provident, error nisi consequuntur id tempore culpa enim, repudiandae commodi quasi aspernatur. Eum sapiente quibusdam perferendis iste fugit quo fugiat perspiciatis.
+			Quasi tempora voluptatum consequuntur, deserunt nam temporibus, illo itaque facilis modi, ducimus delectus aperiam illum dolor laboriosam repudiandae reprehenderit officia. Animi, maiores cumque nisi dolorum tenetur blanditiis cum vel ipsam.
+			Nulla delectus sapiente nostrum repellat animi blanditiis corporis ad eligendi impedit quas tempore, distinctio porro error ducimus fuga illo doloribus esse quasi quaerat quo pariatur eveniet. Nihil ipsum est velit.
+		</p>
+
+		<!-- 
+			ID - УНІКАЛЬНИЙ ідентифікатор
+		 -->
+		<div class="text">
+			<p id="p-1">
+				<mark>Lorem</mark> ipsum dolor sit amet consectetur adipisicing elit. Autem, odit soluta. Eligendi, sed sequi a dignissimos fugiat ipsa consequatur quidem ducimus doloribus necessitatibus perspiciatis veritatis quos nemo eius omnis corporis.
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam recusandae omnis ad quas reprehenderit tenetur nostrum cumque molestiae! A, fugiat libero voluptatem impedit harum voluptatibus possimus eaque sapiente dolores porro!
+				Temporibus ea blanditiis possimus facere, assumenda necessitatibus ipsam non deleniti at, neque odio esse repellat cupiditate consectetur aut rerum voluptas doloribus nihil corrupti ratione ut quibusdam ipsum? Error, maiores esse.
+				Atque quidem deleniti fugiat quos libero earum impedit nam voluptatibus, nulla dolores! Illum eveniet repellendus sed officia voluptatem repellat totam nulla esse? Consequatur est adipisci doloribus maxime libero quod fugiat.
+				Ut sequi aliquid tempore eveniet ducimus consequuntur reiciendis illo vel quae, dolore ipsa? Commodi deserunt aperiam aliquam sequi eligendi hic molestiae, nisi numquam et ipsum praesentium optio mollitia accusantium blanditiis.
+				Blanditiis inventore aut ut rerum aliquid maiores exercitationem doloribus quisquam. Vitae, quidem quisquam. In perferendis veniam neque reiciendis reprehenderit consequatur, tenetur adipisci nulla vitae temporibus, modi sed, ea placeat. Nam.
+				Officia dolorem similique ratione perferendis voluptas, provident consectetur doloribus asperiores earum, neque est cum architecto, sed eaque! Ratione libero dolore consequuntur, perferendis facilis quam dolorem ut facere et unde debitis!
+				Nulla, adipisci itaque ea deleniti dolor id quidem, voluptates ab doloribus doloremque nihil quis quae nemo quo officiis eius, error reiciendis asperiores. Expedita, rem? Fugiat aperiam maiores deleniti quibusdam in!
+				Magnam expedita perferendis animi eum tempora quis explicabo. Itaque error cumque et dolorem. Minus, autem fugiat dolore eius reiciendis nemo corrupti deleniti nihil iste, aliquid voluptatum vel quae doloribus accusamus.
+				Delectus quis molestiae neque reiciendis numquam ab quisquam facilis cupiditate aspernatur? Eligendi, sit vero impedit aliquid dolores asperiores sint odio cumque obcaecati exercitationem voluptates ratione pariatur id expedita placeat sunt.
+				Beatae, sapiente, laborum eos ducimus impedit possimus necessitatibus repudiandae error maxime inventore dolor labore. Pariatur fugiat molestias cum aliquid, quibusdam fugit id ea voluptatum ex illo necessitatibus nulla libero. Fugiat.
+				Numquam illo fuga sed placeat exercitationem voluptatum hic id, labore est voluptatibus animi inventore consequatur voluptas? Dolorum minima doloribus officiis doloremque, blanditiis delectus libero repellendus. Eum vitae quibusdam ea obcaecati?
+				Fugit quisquam eaque porro laboriosam architecto. Obcaecati unde recusandae nisi, animi, deserunt porro culpa aperiam nam ad repudiandae provident sed, sapiente maiores harum cumque commodi error magnam debitis voluptatem sint!
+				Error corrupti aperiam officia beatae dolores reiciendis recusandae vero voluptate non voluptatum optio, laborum odit dignissimos dicta magnam saepe incidunt at, debitis veritatis assumenda facere veniam! Optio id quo at?
+				Dolorem eveniet provident, consequuntur voluptate impedit quae voluptatem placeat esse voluptates fugit similique soluta eaque, aspernatur fugiat explicabo eius tempora iusto maxime non magni reprehenderit odit perspiciatis odio et. Laborum!
+				Ratione perferendis quia eius nam quidem doloribus, similique dolorem! Accusamus, vero nulla sint minus distinctio ea praesentium adipisci nesciunt recusandae sed possimus obcaecati vitae illum veniam maxime sequi voluptatibus error!
+				Nulla nesciunt, maxime provident impedit minima quisquam aut quia aperiam sed sequi! Cum id pariatur incidunt ea laboriosam ad vitae aperiam, nesciunt inventore dolores sint voluptatem soluta dolore eaque iure.
+				Rerum provident nesciunt officia corporis harum ea sit animi. Omnis, ad necessitatibus? Itaque, ratione, quos a fugiat impedit unde dolorum, culpa laboriosam ullam enim ipsum sapiente accusantium suscipit obcaecati. Ducimus?
+				Eveniet laudantium, architecto fugiat, impedit porro reiciendis omnis assumenda voluptates necessitatibus inventore tempora exercitationem, quasi ab est obcaecati saepe soluta? Ipsa quidem labore laudantium voluptas corporis, porro nostrum aspernatur assumenda.
+				Alias repellendus rem, consectetur tempora nemo, amet sed, sunt dolorem facilis nostrum repudiandae accusamus. Odit fugit reprehenderit fugiat quia aut eum ratione repellendus dignissimos, ex est obcaecati, laborum soluta odio?
+				Magnam necessitatibus ipsum ipsa enim. Illo placeat unde consequuntur doloribus consequatur, nesciunt incidunt nihil perspiciatis repellat aliquid ullam et at fugit porro. Excepturi, obcaecati? Praesentium quidem fugiat molestiae debitis. Optio.
+				Aliquam ad debitis porro repellendus assumenda, molestiae illo quisquam doloremque quis sequi nobis qui ipsum. Blanditiis aliquam nemo quisquam quas commodi non iusto. Quaerat perferendis obcaecati consequuntur saepe alias quis.
+				Laudantium vel repellendus animi cupiditate recusandae magni atque deserunt distinctio unde beatae, dolor voluptatum reprehenderit doloribus pariatur consectetur! Quisquam velit excepturi tempore cupiditate assumenda at! Asperiores modi iure eaque magnam!
+				Inventore sunt nemo facere eligendi id reprehenderit. Quae necessitatibus officiis ex incidunt veritatis, in accusantium asperiores tempora quo! Ab ipsam veritatis ducimus laborum rerum in voluptatum optio aspernatur sunt accusantium.
+				Sequi rem ipsa quidem velit aperiam provident corporis perspiciatis obcaecati sit dolorum consequatur sint ratione eligendi, error dolores quaerat molestias iusto? Ipsum perferendis, voluptas quae fugiat quo ipsa eligendi aspernatur.
+				Quidem cum magni sapiente saepe cumque nostrum unde quaerat animi, non eaque quisquam, distinctio recusandae vero! Blanditiis placeat officia excepturi, accusamus, fuga delectus unde id laborum, non culpa dolores cumque.
+				In quibusdam quisquam dolorum quia dolores cumque? Alias consectetur, ullam ipsam quas nesciunt laboriosam minima consequuntur quisquam ipsa voluptatum nostrum quod exercitationem possimus eveniet rem perspiciatis delectus cum eum. Consequatur.
+				Ea et ducimus obcaecati at, quod odit saepe error officia eveniet eum modi, laborum eaque vitae ullam nobis dolore in sit ab vero? Aliquid atque iste nostrum provident veniam necessitatibus.
+				Eaque, tempora distinctio? Dolorum, natus nulla, autem repudiandae cum beatae quod voluptate reiciendis reprehenderit ipsa quia, in ratione eveniet voluptas unde sunt ipsum at animi veritatis corporis ducimus! Minus, fuga!
+				Nostrum ullam cupiditate labore mollitia maiores hic porro adipisci odio totam quaerat beatae ducimus incidunt, enim, nemo recusandae, perferendis quam. Dolore obcaecati impedit molestias sint a omnis, quae atque unde.
+				Nulla rem odio explicabo, reiciendis consequuntur a sunt molestiae sit autem accusantium animi illum ad fugit quam ab architecto ducimus totam vitae magni quo nobis eaque, ratione obcaecati molestias! Deserunt.
+				Molestias sit ex ipsa voluptate magni repudiandae maiores cumque blanditiis aliquid. Nisi reiciendis numquam ea quas nemo iusto inventore quaerat laboriosam, placeat distinctio consequuntur consectetur iste, praesentium neque vero harum!
+				Maiores, dolorum? Reprehenderit sunt, eius saepe maiores consectetur repellendus repudiandae explicabo laborum eligendi consequuntur et possimus soluta, nesciunt, deleniti quae id vero laudantium pariatur doloribus deserunt molestias esse odio a.
+				Voluptatum, recusandae expedita doloremque cumque non distinctio reiciendis omnis repudiandae facere fugiat dolores consectetur laborum delectus culpa voluptatibus aut tempore deserunt soluta nesciunt dignissimos. Facilis sequi ipsum ut minus nemo!
+				Ducimus consequatur vitae hic iste, magni, voluptas quidem sed quibusdam molestiae eveniet aspernatur perspiciatis ullam at natus minus nemo corrupti vero alias! Modi dignissimos eum ipsa delectus eius facere deserunt?
+				Sit quisquam esse quis! Omnis praesentium, aspernatur fugiat cupiditate, totam nobis ab repudiandae labore rem rerum cumque, sapiente fugit dolorum delectus facilis dolorem ipsa doloremque ipsum nemo inventore quibusdam obcaecati.
+				Recusandae obcaecati, nisi earum fuga ipsam omnis iste unde, suscipit cumque ad consectetur accusamus eum, voluptate asperiores ratione modi laborum quaerat nesciunt nihil velit. Laborum sequi atque dolorem modi eum.
+				Ratione labore, voluptatum molestias facere consequuntur commodi ea. Consequuntur esse repellendus quasi ipsum numquam, minus maxime, unde doloribus, accusantium voluptate beatae omnis eveniet? Sunt, error distinctio voluptates consectetur sapiente ad?
+				Fugiat, ea perspiciatis. Repellat, saepe eligendi excepturi quos, labore quaerat dicta nostrum quae alias quibusdam esse quisquam, unde aliquam beatae? Maiores libero soluta excepturi voluptas veritatis fugit dignissimos distinctio sequi?
+				A, magnam cum. Neque, ad est fuga, a numquam expedita dignissimos exercitationem facilis aperiam, ex magni molestiae voluptatibus voluptates adipisci aliquid beatae deleniti aliquam iusto velit unde? Voluptatem, blanditiis iste.
+				Iste quasi nisi aspernatur sequi accusamus similique natus necessitatibus. Ea, obcaecati? Mollitia, fugit. Voluptatem vel modi culpa quos magnam consequuntur nostrum optio necessitatibus, repellat quasi earum cupiditate quia eius! Officiis.
+				Libero suscipit provident blanditiis sapiente cum incidunt nostrum minus similique, culpa animi rem commodi fugiat soluta quas quasi vel quibusdam ab ad cumque sit nisi ea alias. Aut, ratione impedit!
+				Pariatur, velit distinctio. Quos eveniet quas provident error rerum in facere corporis, dolor aspernatur culpa labore quo officiis sunt! Praesentium ipsum optio beatae corporis! Sunt consequuntur dolores suscipit quasi similique?
+				Voluptas facilis suscipit quis ipsa officia, inventore velit rerum nobis aliquam vel quod odio. Maiores sit cum magni, repellendus animi vero voluptates eligendi! Blanditiis aliquid, quisquam aliquam incidunt dolorem iure!
+				Animi sint praesentium quisquam magnam placeat. Nisi consequatur placeat harum accusamus aperiam culpa, distinctio corrupti vel dolores expedita ullam doloremque minus dolorem ex ut itaque ab dolor! Quia, rem ut.
+				Voluptatum saepe iusto eligendi consequuntur sapiente nesciunt commodi et sit voluptatem accusantium eos modi minima possimus itaque voluptas, ad unde voluptatibus vero quos quisquam vel cumque nemo! Quia, eius itaque.
+				Sunt quas aliquid nam, saepe optio quibusdam impedit ducimus cum alias tempore nesciunt praesentium, eveniet voluptas labore hic ab minima minus consequuntur? Dolorum ad commodi itaque culpa, odio architecto cumque?
+				Voluptatibus quisquam praesentium et eius expedita adipisci exercitationem nihil eveniet at harum, velit fuga id sunt, incidunt a magni aperiam cum nobis hic. Illum pariatur quam ad nobis voluptatibus nam.
+				Distinctio, ab ea! Iste officiis perspiciatis, optio laudantium totam est sint dolore veniam minima minus assumenda itaque quod laborum, voluptate suscipit magni sed. Dolorum accusantium molestias consequatur hic exercitationem animi?
+				Ut nobis, ipsum voluptatibus molestiae excepturi tempore voluptatem culpa fuga distinctio ea necessitatibus quam iusto amet doloribus in veniam pariatur soluta quidem voluptatum? Qui error beatae rem architecto voluptate corporis.
+				Numquam velit animi iste possimus eos facilis. Amet repellendus reprehenderit tenetur assumenda necessitatibus fugiat accusamus, exercitationem ipsum libero rerum non eaque debitis animi ab atque culpa, sapiente illum? Sapiente, facere?
+			</p>
+		</div>
+
+		<!-- БЛОЧНІ РДКОВІ та БЛОЧНО-РДКОВІ теги -->
+
+		<!-- Блочні теги -->
+		<!-- Усі будівельні (div,header,footer,main та інші) -->
+		<!-- h1-h6,p,ul,ol,li -->
+
+		<!-- Рядкові теги -->
+		<!-- span,mark,a,br -->
+
+		<!-- Блочно-рядкові -->
+		<!-- img -->
+
+
+		<!-- 
+			Ширина блочного тегу завжди займає 
+			ВСЮ ширину батьківського елементу.
+			Блочний тег завжди починається з нового рядка
+		-->
+		<div>
+			Текст до
+			<div class="block">
+				Привіт!
+			</div>
+			текст після
+		</div>
+		<!-- 
+			Ширина рядкового 
+			тегу займає ширину по ширині
+			контенту всередені.
+			Рядковий тег намагається розміститись в рядок
+			разом і іншими рядковими тегами або текстом
+		 -->
+		<div>
+			Текст до
+			<span>Привіт!</span>
+			текст після
+		</div>
+
+		<!-- 
+			Ширина блочно-рядкового тегу займає ширину по ширині контенту всередені
+			Блочно-рядковий тег намагається розміститись в рядок
+			разом і іншими рядковими тегами або текстом
+		 -->
+		<div>
+			Текст до
+			<img width="100" src="img/01.png" alt="">
+			текст після
+		</div>
+
+	</body>
+</html>
