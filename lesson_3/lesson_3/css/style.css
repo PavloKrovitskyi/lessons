@@ -1,0 +1,83 @@
+@import url(reset.css);
+/* щоб краще виглядало я 
+вирішив додати чорний фон 
+та ширину блокам li */
+.nawigation li {
+  color: brown;
+}
+.nawigation p {
+  color: azure;
+}
+
+#up,
+#down {
+  color: white;
+}
+
+.list li {
+  color: aqua;
+  width: 300px;
+}
+
+* {
+  color: white;
+  background-color: black;
+}
+
+header p {
+  color: blueviolet;
+}
+
+h1,
+h2 {
+  color: coral;
+}
+
+.big-picture {
+  width: 1230px;
+}
+
+.name-hero {
+  color: rgb(126, 126, 233);
+}
+
+.plot > p {
+  color: aquamarine;
+}
+
+.plot ~ p {
+  color: blueviolet;
+}
+
+.game-world p {
+  color: aqua;
+}
+
+.plot-sequel p {
+  color: aquamarine;
+}
+
+.list img {
+  width: 60px;
+}
+
+.locality {
+  color: rgb(155, 143, 121);
+}
+
+.artifact {
+  color: gold;
+}
+
+.weapon {
+  color: red;
+}
+
+.text + p {
+  color: red;
+}
+.up {
+  color: brown;
+}
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Варіант №3 !! Основний !! (підключення окремого файлу) -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 3</title>
+  <!-- Варіант №1 (тег style) -->
+  <!-- 
+		<style>
+			p{
+				color: green;
+			}
+		</style>
+		 -->
+</head>
+
+<body>
+  <!-- Анатомія вкладенності -->
+  <!-- Батьківський елемент для тегів P та SPAN -->
+  <div>
+    <!-- Дочірній елемент першого рівня/безпосередній відносно тегу DIV -->
+    <p>
+      <!-- 
+					Дочірній елемент першого рівня/безпосередній для тегу P 
+					та елемент другого рівня (вкладеності) відносно тегу DIV
+				 -->
+      <span></span>
+    </p>
+  </div>
+  <!-- Вкладеність -->
+  <h1>Заголовок</h1>
+  <div class="text">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores
+      quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores
+      quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores
+      quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
+    </p>
+  </div>
+  <ul class="list">
+    <li>Пункт</li>
+    <li>Пункт</li>
+    <li>Пункт
+      <ul class="sub-list">
+        <li>Пункт</li>
+      </ul>
+    </li>
+    <li>Пункт</li>
+    <li>Пункт</li>
+  </ul>
+  <!-- АнтиЛогічний виняток -->
+  <!-- У рядковий тег A ми МОЖЕМО вкладати конструкції, 
+				у тому числі з використанням блочних, будівельних тегів 
+		-->
+  <!-- 
+		<a href="contacts.html">
+			<div>
+				<img src="" alt="">
+			</div>
+			<div>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur asperiores, laudantium nam vel, praesentium ut id minima autem architecto numquam similique suscipit consequatur quas harum libero? Error labore veritatis tempore.
+				</p>
+			</div>
+		</a>
+		 -->
+  <!-- Введення в CSS -->
+  <!-- 
+			Ім'я класу ми не можемо починати з цифри
+			У тега може бути безліч класів
+		 -->
+  <h1>Я заголовок</h1>
+  <h2>Підрозділи:</h2>
+  <ul id="list">
+    <li>
+      <a href="">Підрозділ №1</a>
+    </li>
+    <li>
+      <a href="">Підрозділ №2</a>
+    </li>
+    <li>
+      <a href="">Підрозділ №3</a>
+    </li>
+  </ul>
+  <div id="some-text" class="text">
+    <!--Варіант №2 (рядковий метод) (Атрибут style) -->
+    <p> <!-- style="пишемо стилі" -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias!
+      Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias!
+      Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias!
+      Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias!
+      Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maiores cum autem aliquid blanditiis nisi velit
+        corporis, doloribus adipisci amet minima ipsam facere necessitatibus illo eveniet dicta quas. Itaque,
+        temporibus?
+      </p>
+    </div>
+  </div>
+  <div class="lesson">
+    <img src="img/01.png" alt="">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias!
+      Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
+    </p>
+
+  </div>
+
+  <section class="main">
+    <div class="main__container">
+      <h1 class="main__title title"></h1>
+      <!-- контент -->
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam inventore maxime quas obcaecati a ea
+        temporibus dolorem quos, odit minima cumque, mollitia ipsa ex praesentium molestias. Vel vero modi quam!</p>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about__container">
+      <h2 class="about__caption title"></h2>
+      <!-- контент -->
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatem distinctio nulla eos, totam
+        ipsum praesentium doloremque unde at debitis quisquam dolore minima vero animi officiis recusandae. Porro, animi
+        in!</p>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="contacts__container">
+      <h2 class="contacts__label title"></h2>
+      <!-- контент -->
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatem distinctio nulla eos, totam
+        ipsum praesentium doloremque unde at debitis quisquam dolore minima vero animi officiis recusandae. Porro, animi
+        in!</p>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
