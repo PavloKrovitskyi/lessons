@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("reset.css");
+
+/* стилі для загального блоку */
+.jewels-development {
+  padding: 100px 0;
+  font-family: "Cormorant Infant";
+}
+/* стилі для обмежуючого контейнеру. Додано font-size: 0; щоб позбутись фантомного відступу. */
+.jewels-development__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 0;
+}
+/* стилі для контентного блоку */
+.jewels-development__content {
+  display: inline-block;
+  max-width: 503px;
+  padding: 70px 0;
+  margin-right: 75px;
+  /* font-size: 16px; загальний розмір для тексту. */
+  font-size: 16px;
+  font-weight: 700;
+}
+.jewels-development__label {
+  color: #d58417;
+  font-size: 20px;
+  line-height: 1; /* 20px */
+  margin-bottom: 27px;
+}
+.jewels-development__title {
+  color: #000;
+  font-size: 64px;
+  line-height: 1; /* 64px */
+  margin-bottom: 30px;
+}
+/* стилі для тексту */
+.jewels-development__text p {
+  color: #606060;
+  font-size: 31px;
+  line-height: 1.4; /* 42px */
+}
+/* додано  vertical-align: top; для того щоб притиснути блок з картинками до верхнього краю блоку. Додано font-size: 0; щоб позбутись фантомного відступу*/
+.jewels-development__images {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 0;
+}
+/* загальний клас для обгорток картинок додано vertical-align: middle; для того щоб картини були по середині блоку*/
+.jewels-development__wrapper-image {
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid #502203;
+  border-radius: 235px;
+}
+/* про всяк випадок додаємо border-radius до картинки */
+.jewels-development__wrapper-image img {
+  border-radius: 235px;
+}
+/* окремий клас для оброгтки першої картинки щоб задати розміри обгортці*/
+.first-image {
+  margin-right: 30px;
+  width: 177px;
+  height: 336px;
+}
+/* зміщуємо картинку відносно обгортки вліво (від'ємним марджмином) та вниз (за допомогою падінгу)*/
+.first-image img {
+  margin-left: -10px;
+  padding-top: 14px;
+}
+/* окремий клас для оброгтки другої картинки щоб задати розміри обгортці*/
+.second-image {
+  width: 307px;
+  height: 500px;
+}
+/* зміщуємо картинку відносно обгортки вліво (від'ємним марджмином) та вниз (за допомогою падінгу)*/
+.second-image img {
+  margin-left: -11px;
+  padding-top: 19px;
+}
