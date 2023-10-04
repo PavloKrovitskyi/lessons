@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
+@import url("reset.css");
+
+body {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 179%;/* 25/14 */
+  color: #6C757D;
+}
+
+[class*="__container"] {
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 1270px;
+}
+
+.text__container {
+  margin: 0 auto;
+  max-width: 816px;
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 40px 80px;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 160%;/* 40/25 */
+  color: #212529;
+}
+
+.autor {
+  font-weight: 700;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul {
+  margin-bottom: 15px;
+}
+
+li {
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.big-img {
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+
+.img-blok {
+  display: inline-block;
+  margin-bottom: 80px;
+  font-size: 0px;
+}
+
+.img1 {
+  max-width: 100%;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.img2 {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+/* ========= */
+/* next page */
+/* ========= */
+
+.big-img-pg2 {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.text-p-2__container {
+  max-width: 816px;
+  margin-bottom: 100px;
+}
+
+.text__container h2{
+  max-width: 605px;
+}
+
+.img-blok-pg2 {
+  display: inline-block;
+  margin-bottom: 100px;
+  font-size: 0px;
+}
+
+.blok-pg2-img1 {
+  max-width: 100%;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.blok-pg2-img2 {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+/* практика */
+
+.homework {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:aqua;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+
+.homework__container {
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+.blok1-homework {
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+  border: 2px solid blueviolet;
+  border-radius: 5px 120px;
+  overflow: hidden;
+}
+
+.part1 {
+  border: 4px dashed;
+  background-color:chartreuse;
+  display: inline-block;
+  max-width: 630px;
+}
+
+.part2 {
+  outline: 8px solid coral;
+  background-color: chartreuse;
+  display: inline-block;
+  max-width: 630px;
+}
+
+.blok2-homework {
+  font-size: 0;
+  max-width: 1050px;
+  margin: 0 auto 35px;
+  padding-bottom: 50px;
+}
+
+.blok2-homework-img1 {
+  border-radius: 50%;
+  margin-right: 30px;
+  box-shadow: 0 0 15px 10px rgb(32, 123, 126);
+}
+
+.blok2-homework-img2 {
+  opacity: 0.7;
+}
+
+footer{
+  padding-bottom: 50px;
+}
+
+
+  /* спробував зробити нижню частину */
+
+  .blok{
+  display:  block;
+}
+.in-blok{
+  display: inline-block;
+  width: 180px;
+}
+
+.in-blok:not(:last-child){
+  margin-right: 18px;
+}
+
+.in-blok span{
+  font-weight: 500;
+  color: #212529;
+} 
+
+.ul-links {
+  font-size: 0;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.ul-links li {
+  margin-right: 15px;
+  display: inline-block;
+  padding: 2px 13px;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+li.share {
+  margin: 0 0 0 380px;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-image: url(../img/software-upload.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+  .nav-link{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1270px;
+}
+
+.pr-next-page{
+  display: inline-block;
+  background-color: rgb(12, 230, 30);
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 0 10px 5px 2px #000;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px;
+  color: white;
+  position: relative;
+  top: 0px;
+  transition: all 0.1s;
+}
+
+.pr-next-page:hover{
+  top: 3px;
+  box-shadow: 0 2px 0 0 #000;
+}
+
+.pr-next-page:active{
+  background-color: red;
+} 
