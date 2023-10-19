@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter:500,600,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lesson 9</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Типи WEB зображень.</h1>
+    <div class="info-img article">
+      <div class="info-img__container">
+        <div class="content-box">
+          <p>
+            Існує два типи зображень для використання в верстці сайтів, це Растрові (піксельні) та Векторні (лінійні).
+          </p>
+          <p>Растрові - це картинки формату png, jpg, jpeg, webp. В більшості випадків використовуються як контентні та фонові зображення.</p>
+          <p>
+            Векторні - це картинки формату svg.
+          </p>
+          <p>
+            При верстці сайту зображення ще поділяють на два типи:
+          </p>
+          <ol>
+            <li>Контентні - це зображення які являються контентом на сайті, в більшості випадків використовується растровий тип формату png, jpg, jpeg, webp, зрідка використовують формат svg. Контентні зображення можуть бути замінені на інші, тому вони інтегруються через HTML за допомогою тегу img.</li>
+            <li>Елементи дизайну - це зображення, які використовуються, для створення унікального вигляду сайту або елементів. Можуть використовуватися як і растрові так і векторні типи зображень. Елементи дизайну частіше всього інтегруються через CSS за допомогою властивості background та ішими.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="rastr-img article">
+      <div class="contant-img__container">
+        <h2>Контентні зображення</h2>
+        <div class="img-group">
+          <p>
+            Зображення з великим розширенням, найчастіше, може використовуватись як фон, або як частина слайдеру.
+          </p>
+          <img src="img/rastr/background-women.webp" alt="дівчина що посміхається">
+          <P>
+            Перед використанням у верстці, зображення потрібно скачати на коп'ютер в потрібному форматі. Найкращий формат растрового зображення для верстки - це webp, якщо він не доступний, то обираємо jpg або png.
+          </P>
+          <img src="img/rastr/2-man-laptop.webp" alt="двоє чоловіків перед ноутбуком">
+          <img src="img/rastr/laptop-code.webp" alt="ноутбук відображає код">
+          <img src="img/rastr/women-laptop.webp" alt="жінка з ноутбуком">
+          <p>
+            Після скачування, зображення потрібно зтиснути, щоб воно мало меншу вагу, та швидше завантажувалось на сторінці. В інтернеті є багато різних сервісів котрі виконують цю функцію, я ж використовував<a target="_blank" href="https://tinypng.com/">Tiny Png.</a> <br> Після зтиснення зображення не втрачають свою якість, та стають легші на 30-40%, що дозволяє браузеру швидше їх завантажувати.
+          </p>
+          <img src="img/rastr/man-cup.webp" height="361" alt="чоловік в окулярах">
+          <img src="img/rastr/team-grop-pic1.webp" alt="дівчина в червоному">
+          <img src="img/rastr/team-grop-pic2.webp" alt="чоловік в білому костюмі">
+          <img src="img/rastr/team-grop-pic3.webp" alt="чоловік опирається на стіл">
+          <p>
+            Стиснуті зображення в форматі jpg, png потрібно конвертувати в формат webp і вже після конвертації їх можна використовувати в верстці. Для проведення цієї операції я використовував сервіс <a target="_blank" href="https://convertio.co/ru/jpg-webp/">Convertio</a>
+          </p>
+          <img src="img/rastr/visit-card.webp" alt="візитна картка">
+          <img src="img/rastr/work-grop.webp" alt="група людей в масках">
+          <img src="img/rastr/work-plase.webp" alt="робоче місце">
+          <p>
+            Також до контентних зображень можна віднести і векторні зображення які доповнюють або підкреслюють контент.
+          </p>
+          <div class="img-group img-svg">
+            <img src="img/icon/100-components.svg" alt="">
+            <img src="img/icon/costomizable.svg" alt="">
+            <img src="img/icon/design.svg" alt="">
+            <img src="img/icon/updates.svg" alt="">
+            <img src="img/icon/wave.svg" alt="">
+            <img src="img/icon/speed-optimized.svg" alt="">
+            <img src="img/icon/phone-icon.svg" alt="">
+          </div>
+          <div class="img-group">
+            <img src="img/rastr/man-glass.webp" height="360" alt="чоловік в окулярах">
+            <img src="img/rastr/team-grop-pic4.webp" alt="чоловік в окулярах на зеленому фоні">
+            <img src="img/rastr/2women-laptop.webp" alt="дві жінки дивляться в ноутбук">
+          </div>
+          <div class="img-group">
+            <img src="img/rastr/girl-in-red.webp" alt="кругле фото дівчина в червоному ">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="vektor-img article">
+      <div class="vektor-img__container">
+        <h2>
+          Приклад декоративних зображень
+        </h2>
+        <div class="img-group">
+          <img src="img/icon/logo.svg" alt="">
+          <img src="img/icon/ayro-ui.svg" alt="">
+          <img src="img/icon/gray-grids.svg" alt="">
+          <img src="img/icon/line-icons.svg" alt="">
+        </div>
+
+        <div class="img-group">
+          <img src="img/icon/blue-dotted.svg" alt="">
+          <img src="img/icon/dreen-dotted.svg" alt="">
+          <img src="img/icon/white-dotted.svg" alt="">
+          <img src="img/icon/building.svg" alt="">
+          <img src="img/icon/envelope.svg" alt="">
+          <img src="img/icon/twitter.svg" alt="">
+          <img src="img/icon/facebook.svg" alt="">
+          <img src="img/icon/instagram.svg" alt="">
+          <img src="img/icon/linkedin.svg" alt="">
+          <img src="img/icon/email-addres.svg" alt="">
+          <img src="img/icon/phone-number.svg" alt="">
+          <img src="img/icon/our-adress.svg" alt="">
+          <img src="img/icon/shape.svg" alt="">
+          <img src="img/icon/background-red-girl.svg" width="136" alt="">
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
