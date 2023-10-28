@@ -1,0 +1,620 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	margin: 0 auto;
+	background: #1beef199;
+}
+
+.header {
+	background: #fff;
+	height: 100px;
+
+
+}
+
+.header_nav {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 20px 10px 30px 10px;
+	text-align: center;
+
+}
+
+.nav__title {
+	display: inline-block;
+	font-size: 20px;
+	margin-right: 350px;
+
+}
+
+.nav__list {
+	display: inline-block;
+
+
+}
+
+.list__item {
+	display: inline-block;
+	margin-right: 50px;
+
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.nav__title:hover,
+.list__item:hover {
+	font-size: 24px;
+	color: blueviolet;
+	opacity: 0.5;
+}
+
+.list__item:last-child {
+	margin-right: 0;
+}
+
+/*-----------------*/
+.page__wrapper {
+	background-color: #fff;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 30px;
+}
+
+.page__title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.37;
+	margin-bottom: 12px;
+}
+
+.page__text {
+	color: #7D7D7D;
+	line-height: 1.46;
+	margin-bottom: 42px;
+}
+
+.page__subtitle {
+	color: #6B77E5;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+
+.page__text:last-of-type {
+	margin-bottom: 40px;
+}
+
+.page__benefit {}
+
+.benefit__image {
+	display: inline-block;
+	width: 370px;
+	height: 270px;
+	background-image: url("../img/image-02.jpg");
+	background-repeat: no-repeat;
+	margin-right: 29px;
+	transform: scale(1);
+
+
+}
+
+.benefit__image:hover {
+	transform: scale(0.8);
+	transition: 1.5s;
+}
+
+
+
+.benefit__text {
+	display: inline-block;
+	width: 332px;
+	height: 270px;
+	vertical-align: top;
+}
+
+.benefit__title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 15px;
+}
+
+.benefit__subtitle {
+	color: #40DDB6;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 21px;
+}
+
+.benefit__item {
+	color: #7D7D7D;
+	margin-bottom: 30px;
+}
+
+.benefit__item:last-child {
+	margin-bottom: 0;
+}
+
+.benefit__item::before {
+	content: "";
+	background-image: url("../img/li.svg");
+	background-repeat: no-repeat;
+	margin-bottom: -7px;
+	margin-right: 8px;
+	width: 27px;
+	height: 27px;
+
+}
+
+.benefit__item:hover::before {
+
+	border: 13.5px solid red;
+	border-radius: 50%;
+	width: 27px;
+	height: 27px;
+}
+
+/*-------------*/
+.block__wrapper {
+	background-color: #fff;
+	margin: 0 auto;
+	width: 800px;
+	padding: 30px;
+}
+
+.block__subtitle::before {
+	content: "";
+	border: 6px solid #40DDB6;
+	margin-right: 6px;
+
+}
+
+.block__subtitle {
+	color: #37393F;
+	font-weight: 500;
+	margin-bottom: 16px;
+
+}
+
+.block__title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	width: 413px;
+	margin-bottom: 10px;
+
+}
+
+.block__text {
+	color: #7D7D7D;
+	line-height: 1.46;
+	margin-bottom: 16px;
+}
+
+.block__text:last-of-type {
+	margin-bottom: 48px;
+}
+
+.block__block1,
+.block__block2 {
+	display: inline-block;
+	border: 1px solid #E3E3E3;
+	padding: 28px 41px 28px 38px;
+	margin-bottom: 31px;
+}
+
+.block__content {
+	display: inline-block;
+	width: 550px;
+}
+
+.block__block1::before,
+.block__block2::before {
+	content: "";
+	background-image: url("../img/li.svg");
+	width: 27px;
+	height: 27px;
+	margin-bottom: 53px;
+	margin-right: 19px;
+}
+
+
+
+.block1__title,
+.block2__title {
+
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+
+
+
+
+
+
+.block1__text,
+.block2__text {
+	color: #7D7D7D;
+	line-height: 1.46;
+}
+
+
+.button {
+	background-color: #6B77E5;
+	padding: 22px 35px;
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+button:hover {
+	opacity: 0.8;
+	border-radius: 25px;
+}
+
+.progress {
+	background: #fff;
+	width: 1220px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0 0 0;
+}
+
+.prosress_title_title {
+	color: #37393F;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+}
+
+.prosress_title_title::before {
+	content: "";
+	border: 6px solid #40DDB6;
+	margin-right: 6px;
+}
+
+.progress__title_text {
+	color: #37393F;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	text-transform: capitalize;
+	margin-bottom: 41px;
+}
+
+.progress__content {
+	display: inline-block;
+	margin-bottom: 150px;
+}
+
+.progress__content_block {
+	display: inline-block;
+	width: 380px;
+	margin-right: 31px;
+}
+
+.progress__content_block:last-child {
+	margin-right: 0;
+}
+
+.img_progress {
+	margin-bottom: -36px;
+}
+
+.content__title {
+	background: #F4F4F4;
+	padding: 58px 43px;
+}
+
+.content_block_title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 16px;
+}
+
+.content_block_text {
+	color: #7D7D7D;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.47;
+	margin-bottom: 37px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 600;
+	color: #6B77E5;
+
+}
+
+a:active {
+	font-size: 24px;
+}
+
+.img_progress:hover {
+	opacity: 0.5;
+}
+
+.wrapper__card {
+	max-width: 1600px;
+	background: #fff;
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+
+.card__left {
+	display: inline-block;
+	max-width: 488px;
+	vertical-align: top;
+
+}
+
+.card__left_text {
+	font-family: Cormorant Infant;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.15;
+	padding-top: 150px;
+
+}
+
+.card__middle {
+	display: inline-block;
+	max-width: 339px;
+	vertical-align: top;
+	margin-right: 46px;
+}
+
+.card__middle_image,
+.card__rigth_image {
+	display: block;
+	border: 1px solid #000;
+	margin-bottom: 25px;
+}
+
+.card__image:hover,
+.card__image2:hover {
+	opacity: 0.5;
+	color: #000;
+}
+
+.card__image,
+.card__image2 {
+	margin: 9px -10px -9px 10px;
+}
+
+.description,
+.price {
+	font-family: Cormorant Infant;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.card__rigth {
+	display: inline-block;
+	max-width: 339px;
+	text-decoration: none;
+	color: #000;
+}
+
+.card__text {
+	font-family: Cormorant Infant;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.13;
+}
+
+.card__text::before {
+	content: "#";
+
+}
+
+.price::before {
+	content: "$";
+
+}
+
+.game {
+	max-width: 500px;
+	height: 500px;
+	background-color: red;
+	margin: 0 auto;
+}
+
+.field__game {
+	margin-bottom: 150px;
+}
+
+
+
+.field__game1 {
+
+	width: 70px;
+	height: 30px;
+	border: 2px solid greenyellow;
+	text-align: center;
+	padding: 5px;
+
+	background-color: grey;
+
+
+
+}
+
+.field__game1:hover {
+	font-size: 20px;
+	color: #FFF;
+	opacity: 0.5;
+	background-color: #528205;
+	border: 2px dotted #fff;
+
+}
+
+.field__game2 {
+
+	width: 30px;
+	height: 100px;
+	background-color: chartreuse;
+	visibility: hidden;
+}
+
+.field__game1:hover~.field__game2,
+.field__game2:hover {
+	visibility: visible;
+}
+
+.field__game3 {
+
+
+	width: 150px;
+	height: 30px;
+	background-color: chartreuse;
+	visibility: hidden;
+}
+
+.field__game2:hover~.field__game3,
+.field__game3:hover {
+	visibility: visible;
+}
+
+.field__game4 {
+
+
+	width: 30px;
+	height: 50px;
+	background-color: chartreuse;
+	margin: 0 0 0 120px;
+	visibility: hidden;
+}
+
+.field__game3:hover~.field__game4,
+.field__game4:hover {
+	visibility: visible;
+}
+
+.field__game5 {
+	width: 150px;
+	height: 30px;
+	background-color: chartreuse;
+	margin: 0 0 0 120px;
+	visibility: hidden;
+}
+
+.field__game4:hover~.field__game5,
+.field__game5:hover {
+	visibility: visible;
+}
+
+.field__game6 {
+	width: 30px;
+	height: 130px;
+	background-color: chartreuse;
+	margin: 0 0 0 240px;
+	visibility: hidden;
+}
+
+.field__game5:hover~.field__game6,
+.field__game6:hover {
+	visibility: visible;
+}
+
+
+.field__game7 {
+	width: 150px;
+	height: 30px;
+	background-color: chartreuse;
+	margin: 0 0 0 120px;
+	visibility: hidden;
+}
+
+.field__game6:hover~.field__game7,
+.field__game7:hover {
+	visibility: visible;
+}
+
+.field__game8 {
+	width: 30px;
+	height: 70px;
+	background-color: chartreuse;
+	margin: 0 0 0 120px;
+	visibility: hidden;
+}
+
+.field__game7:hover~.field__game8,
+.field__game8:hover {
+	visibility: visible;
+}
+
+.field__game9 {
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	border: 2px solid greenyellow;
+	text-align: center;
+	padding: 5px;
+	background-color: grey;
+	margin-left: 100px;
+	visibility: hidden;
+}
+
+.field__game8:hover~.field__game9,
+.field__game9:hover {
+	visibility: visible;
+}
+
+img {
+	visibility: hidden;
+}
+
+.field__game9:hover~img,
+img:hover {
+	visibility: visible;
+	margin-left: 200px;
+	transition: 10.0s;
+
+}
+
+span {
+	visibility: hidden;
+}
+
+.field__game9:hover~span {
+	visibility: visible;
+	font-size: 25px;
+
+}
