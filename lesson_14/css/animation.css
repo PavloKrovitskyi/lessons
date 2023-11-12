@@ -1,0 +1,639 @@
+.wrapper {
+	min-width: 100vh;
+	overflow: hidden;
+
+
+}
+
+.wrapper::before {
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 555;
+	background-color: rgb(4, 16, 148);
+	opacity: 0;
+}
+
+.final {
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 557;
+	color: rgb(207, 207, 186);
+	text-shadow: 2px 2px #010102;
+	opacity: 0;
+
+}
+
+.final-container {
+	width: 700px;
+	height: 100px;
+	margin: 0 auto;
+	font-size: 35px;
+	padding-top: calc((100vh - 100px) / 2);
+
+}
+
+.final-container h2 {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.final-container h4 {
+	font-size: 25px;
+
+	text-align: center;
+}
+
+
+
+.wrapper-fon {
+	overflow: clip;
+	min-height: 100vh;
+	position: relative;
+}
+
+
+
+video {
+	overflow: hidden;
+	width: 100%;
+
+	overflow: hidden;
+	width: 100%;
+	min-height: 100vh;
+
+
+
+
+}
+
+
+
+
+@keyframes move {
+	0% {
+		transform: rotateX(0deg);
+
+	}
+
+	50% {
+		transform: rotateX(1deg);
+
+	}
+
+	100% {
+		transform: rotateX(0deg);
+
+	}
+}
+
+.move {
+
+	position: fixed;
+
+	animation: move 1s infinite;
+}
+
+
+.car {
+	display: inline-block;
+	position: absolute;
+	width: 1000px;
+	bottom: 0px;
+	perspective: 1000px;
+	left: 10%;
+
+}
+
+.car-container {
+	position: fixed;
+	bottom: 100px;
+	left: 50%;
+	width: 900px;
+	height: 250px;
+	z-index: 90;
+	perspective: 1000px;
+	transform: scale(0.75);
+}
+
+
+
+
+
+@media (max-width: 1600px) {
+	.car-container {
+		transform: scale(0.5);
+		bottom: 140px;
+	}
+
+	.bicycle-five img {
+		width: 120px;
+
+	}
+
+
+	.bicycle img {
+		width: 120px;
+
+	}
+
+	.bicycle-one,
+	.bicycle-two,
+	.bicycle-three,
+	.bicycle-four {
+
+		bottom: 220px;
+
+
+
+	}
+
+	.telepnone {
+		position: fixed;
+		margin-bottom: 50px;
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+.san-ran {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(243, 215, 103);
+	border-radius: 50%;
+	animation: colorChange 70s linear infinite;
+	filter: blur(15px);
+}
+
+
+@keyframes colorChange {
+	0% {
+		background-color: rgb(243, 215, 103);
+
+	}
+
+	50% {
+		background-color: rgb(199, 132, 0);
+	}
+
+	100% {
+		background-color: rgb(199, 0, 73);
+	}
+}
+
+.san {
+	position: absolute;
+	left: 20%;
+	bottom: 0px;
+	width: 500px;
+	animation: ran 100s linear infinite normal running 0s forwards;
+
+}
+
+
+
+@keyframes ran {
+	0% {
+		transform: rotate(0deg);
+		opacity: 0;
+		width: 500px;
+		left: -10px;
+
+	}
+
+	15% {
+		opacity: 0;
+		width: 600px;
+
+
+	}
+
+	25% {
+		opacity: 0.8;
+		width: 650px;
+		top: 10px;
+
+	}
+
+	30% {
+		opacity: 0.7;
+		width: 500px;
+		top: 30px;
+
+	}
+
+	35% {
+		opacity: 0.2;
+		width: 450px;
+		top: 10px;
+
+	}
+
+	50% {
+		opacity: 0;
+		width: 400px;
+		top: 10px;
+	}
+
+	60% {
+		opacity: 0.0;
+
+	}
+
+
+	75% {
+		opacity: 0;
+		width: 300px;
+		right: 10px;
+	}
+
+
+	85% {
+		opacity: 0;
+		width: 850px;
+		right: 20px;
+	}
+
+
+	100% {
+		transform: rotate(360deg);
+		opacity: 0;
+		width: 100px;
+	}
+}
+
+
+
+.bicycle-one,
+.bicycle-two,
+.bicycle-three,
+.bicycle-four {
+	position: fixed;
+	bottom: 50px;
+	min-width: 100%;
+	left: -200px;
+	z-index: 99;
+
+}
+
+.bicycle-five {
+	position: fixed;
+	z-index: 150;
+	bottom: 60px;
+	min-width: 100%;
+	left: 90px;
+	transform: scale(0);
+}
+
+.bicycle-five img {
+	width: 200px;
+
+}
+
+
+.bicycle img {
+	width: 200px;
+}
+
+@keyframes moveImage-one {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	5% {
+		opacity: 1;
+	}
+
+	15% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	90% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(110%);
+	}
+}
+
+@keyframes moveImage-two {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+
+	}
+
+	5% {
+		opacity: 1;
+	}
+
+	15% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	90% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(110%);
+	}
+}
+
+@keyframes moveImage-three {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+
+	}
+
+	5% {
+		opacity: 1;
+	}
+
+	15% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	90% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(110%);
+	}
+}
+
+@keyframes moveImage-four {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+
+	}
+
+	5% {
+		opacity: 1;
+	}
+
+	15% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	90% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(110%);
+	}
+}
+
+
+
+.bicycle-one {
+	animation: moveImage-one 20s linear infinite normal running 0s none;
+}
+
+.bicycle-two {
+	animation: moveImage-two 20s linear infinite normal running 3s none;
+}
+
+.bicycle-three {
+	animation: moveImage-three 30s linear infinite normal running 6s none;
+}
+
+.bicycle-four {
+	animation: moveImage-four 20s linear infinite normal running 8s none;
+}
+
+.bicycle-five {
+	animation: moveImage-five 10s linear normal running;
+	animation-delay: 43s;
+}
+
+
+
+.back-window {
+	transform: translateY(80px);
+	animation: moveBackWindow 15s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes moveBackWindow {
+	0% {
+		transform: translateY(0px);
+
+	}
+
+	50% {
+		transform: translateY(0px);
+
+	}
+
+	100% {
+		transform: translateY(80px);
+
+	}
+}
+
+@keyframes wheel-ran {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+.rear-wheel,
+.front-wheel {
+	animation: wheel-ran 1s linear infinite;
+}
+
+
+
+@keyframes open-door {
+	0% {
+		transform: rotateY(0deg);
+		z-index: 7;
+	}
+
+	50% {
+		transform: rotateY(35deg);
+
+		z-index: 5;
+	}
+
+
+	100% {
+		transform: rotateY(0deg);
+		z-index: 7;
+	}
+}
+
+
+.back-door,
+.back-window {
+	animation: open-door 5s ease-in-out forwards;
+	perspective: 1000px;
+	animation-delay: 35s;
+	perspective-origin: 100% 0%;
+}
+
+
+@keyframes open-hood {
+	0% {
+		transform: translateY(0);
+
+	}
+
+	50% {
+		transform: translateY(30px);
+		transform-origin: right;
+		transform: rotate(30deg);
+
+	}
+
+
+	100% {
+		transform: translateY(0);
+
+	}
+}
+
+
+.hood {
+	animation: open-hood 3s ease-in-out forwards;
+	perspective: 1000px;
+	animation-delay: 40s;
+}
+
+
+@keyframes moveImage-five {
+	0% {
+		opacity: 0;
+		transform: translateX(0);
+		transform: scale(0);
+
+	}
+
+	5% {
+		transform: scale(1);
+	}
+
+	15% {
+
+		transform: translateX(0);
+		transform: scale(1);
+	}
+
+	90% {
+
+		transform: translateX(0);
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+		transform: translateX(110%);
+
+	}
+}
+
+
+@keyframes back-passenger {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+
+	}
+}
+
+
+.back-passenger {
+	animation: back-passenger 1s ease-in-out forwards;
+	animation-delay: 37s;
+}
+
+
+@keyframes final {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+
+	}
+}
+
+
+.wrapper::before,
+.final {
+	animation: final infinite ease-in-out forwards;
+	animation-delay: 55s;
+
+}
+
+@keyframes telepnone-ran {
+	0% {
+		transform: translateX(150%);
+	}
+
+	50% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-150%);
+	}
+}
+
+.telepnone {
+	position: fixed;
+	bottom: -17px;
+	min-width: 100%;
+	animation: telepnone-ran 20s linear infinite;
+	z-index: 530;
+}
+
+.bird {
+	position: absolute;
+	bottom: 500px;
+	height: 200px;
+}
