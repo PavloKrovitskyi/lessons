@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap");
+@import url("reset.css");
+
+.wrapper {
+  font-family: "Inter";
+  font-size: 18px;
+  color: #37393f;
+  background-color: rgba(8, 14, 28, 0.8);
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper__header {
+  margin-bottom: 40px;
+}
+.header,
+.footer {
+  padding: 20px 0;
+}
+.footer__title,
+.header__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.wrapper__page {
+  margin-bottom: 40px;
+}
+.page {
+}
+.footer {
+}
+.footer__title {
+}
+/* ====================================== */
+
+.page__experts {
+}
+.experts {
+}
+.experts__container {
+}
+.experts__list {
+  font-size: 0;
+}
+.experts__list:not(:last-child) {
+  margin-bottom: 31px;
+}
+.experts__item {
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  width: 31.639%;
+  height: 72.555%;
+  vertical-align: top;
+}
+.experts__item::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #6b77e5b2;
+  visibility: hidden;
+}
+.experts__item:hover .experts__social {
+  visibility: visible;
+}
+.experts__item:hover::before {
+  visibility: visible;
+}
+.experts__item:not(:last-child) {
+  margin-right: 31px;
+}
+.experts__body {
+  padding: 21px;
+}
+.experts__body::before {
+  content: "";
+  display: block;
+  height: 100%;
+  min-height: 33px;
+  margin-bottom: 100%;
+}
+.experts__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.experts__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.experts__social {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -88px;
+  margin-top: -25px;
+  visibility: hidden;
+  z-index: 2;
+}
+.social {
+  font-size: 0;
+}
+.social__item {
+  display: inline-block;
+}
+.social__item:not(:last-child) {
+  margin-right: 13px;
+}
+.social__link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #40ddb6;
+}
+.social__item:nth-child(1) .social__link {
+  background: #40ddb6 url("../img//icons/insta.svg") center / 25px 25px no-repeat;
+}
+.social__item:nth-child(2) .social__link {
+  background: #40ddb6 url("../img//icons/fb.svg") center / 25px 25px no-repeat;
+}
+.social__item:nth-child(3) .social__link {
+  background: #40ddb6 url("../img//icons/tw.svg") center / 25px 25px no-repeat;
+}
+.social__item .social__link:hover {
+  background-color: rgb(229, 146, 107);
+}
+.experts__info {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: #fff;
+  padding: 26px;
+}
+.experts__name {
+  font-family: "Poppins";
+  font-size: 24px;
+  /* font-weight: 600; */
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
+.experts__name:not(:last-child) {
+  margin-bottom: 8px;
+}
+.experts__post {
+  color: #7d7d7d;
+  font-weight: 400;
+  line-height: 1.35; /* 24.334px */
+}
