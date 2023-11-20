@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+@import url("reset.css");
+
+/* стилі для центрування шрифту та фону */
+body {
+  min-height: 1080px;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+/* ================================================== */
+/* батьківський блок */
+.form-3d {
+  max-width: 700px;
+  width: 100%;
+  min-height: 447px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+/* тіло картки */
+.form-3d__body {
+  position: relative;
+  transition: 1s ease-in-out;
+  /* вказуємо властивості для 3D трансформації */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  /* додаємо 0.01deg щоб позбутись стрибку тексту на передній частині, щоб побачити як це виглядає закоментуйте рядок 34 */
+  transform: rotateY(0.001deg);
+}
+/* при наведені на картку обертаємо тіло картки */
+.form-3d:hover .form-3d__body {
+  transform: rotateY(180deg);
+}
+/* загальні стилі для передньої та задньої сторони */
+.form-3d__side {
+  padding: 20px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.form-3d__side--front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  /* центруємо текст та контент флексом */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url(../img/bg3.jpg) center / cover no-repeat;
+}
+/* встановлюємо позицію по осі Z та зменшуємо контент за допомогою scale для передньої сторони */
+.form-3d__side--front .form-3d__content {
+  transform: translateZ(90px) scale(0.95);
+}
+/* встановлюємо позицію по осі Z та збільшуємо контент за допомогою scale для задньої сторони */
+.form-3d__side--back .form-3d__content {
+  transform: translateZ(90px) scale(1.08);
+}
+.form-3d__content {
+  line-height: 1.3;
+}
+/* загальні стилі для заголовків */
+.form-3d__title {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+  display: inline-block;
+}
+/* відступ від заголовку на першій стороні до тексту */
+.form-3d__side--front .form-3d__title:not(:last-child) {
+  margin-bottom: 50px;
+}
+.form-3d__title:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 70%;
+  height: 3px;
+  background-color: #3e3;
+  transform: translateX(-50%);
+}
+.form-3d__wrapper-title {
+  text-align: center;
+}
+.form-3d__text {
+  line-height: 1.6;
+}
+/* стилі для тильної частини */
+.form-3d__side--back {
+  transform: rotateY(180deg);
+  background: #333 url(../img/bg2.jpg) center / cover no-repeat;
+}
+.form-3d__side--back .form-3d__content {
+  padding: 20px;
+}
+/* стилі для лейбла */
+.form-3d__item label {
+  margin: 15px 0;
+  font-weight: 600;
+}
+.form-3d__item label,
+.form-3d__item input {
+  display: block;
+}
+/* стилі для полів вводу */
+.form-3d__item input,
+.form-3d__item textarea {
+  background: transparent;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 10px 20px;
+  width: 100%;
+  color: #fff;
+  transition: border-bottom 0.3s;
+}
+/* стилі для полів вводу в стані hover */
+.form-3d__item input:hover,
+.form-3d__item textarea:hover {
+  border-bottom: 2px solid #3e3;
+}
+/* стилі для полів вводу в стані focus */
+.form-3d__item input:focus,
+.form-3d__item textarea:focus {
+  outline: 2px solid white;
+}
+/* заборона для зміни розміру */
+.form-3d__item textarea {
+  resize: none;
+}
+/* стилі для placeholder */
+.form-3d__item input::placeholder,
+.form-3d__item textarea::placeholder {
+  color: #3e3;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* стилі для кнопки */
+.form-3d__button {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: 3px solid #dbdbdb;
+  border-radius: 4px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 1;
+  transition:
+    color 0.3s,
+    border 0.3s;
+}
+/* стилі для кнопки в стані hover */
+.form-3d__button:hover {
+  color: #3e3;
+  border: 3px solid #3e3;
+}
