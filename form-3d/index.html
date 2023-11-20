@@ -10,30 +10,53 @@
 
 <body>
 
+
   <div class="form-3d">
-    <div class="form-3d__front form-3d__side">
-      <div class="form-3d__content">
-        <h1>LOREM</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo soluta optio cum quisquam. Corporis placeat, illum sed nesciunt, eos ducimus repudiandae quidem voluptatem eligendi, voluptate obcaecati. Asperiores, repellat molestias!
-        </p>
+
+    <div class="form-3d__body">
+      <div class="form-3d__side form-3d__side--front">
+        <div class="form-3d__content">
+          <h1 class="form-3d__title">title</h1>
+          <div class="form-3d__text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo soluta optio cum quisquam. Corporis placeat, illum sed nesciunt, eos ducimus repudiandae quidem voluptatem eligendi, voluptate obcaecati. Asperiores, repellat molestias!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form-3d__side form-3d__side--back">
+        <div class="form-3d__content">
+          <div class="form-3d__wrapper-title">
+            <h2 class="form-3d__title">Contact Me</h2>
+          </div>
+          <form class="form-3d__form" action="#" method="post">
+
+            <div class="form-3d__items">
+              <div class="form-3d__item">
+                <label for="user-name">Your Name :</label>
+                <input id="user-name" name="user-name" type="text" autocomplete="on" placeholder="Helena Gomez" required>
+              </div>
+
+              <div class="form-3d__item">
+                <label>Your E-mail :</label>
+                <input type="email" autocomplete="on" placeholder="example@mail.com" required>
+              </div>
+
+              <div class="form-3d__item">
+                <label>Your message :</label>
+                <textarea placeholder="Message"></textarea>
+              </div>
+              
+            </div>
+
+            <button class="form-3d__button" type="submit">done</button>
+          </form>
+        </div>
       </div>
     </div>
-    <div class="form-3d__back form-3d__side">
-      <div class="form-3d__content">
-        <h2>Contact Me</h2>
-        <form>
-          <label>Your Name :</label>
-          <input type="text" autocomplete="on" placeholder="Helen G" required>
-          <label>Your E-mail :</label>
-          <input type="email" autocomplete="on" placeholder="example@mail.com" required>
-          <label>Your message :</label>
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">done</button>
-        </form>
-      </div>
-    </div>
+
   </div>
+
 
 </body>
 
