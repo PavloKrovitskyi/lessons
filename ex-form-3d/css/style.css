@@ -42,6 +42,7 @@ body {
   padding: 20px;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  border-radius: 20px;
 }
 .form-3d__side--front {
   position: absolute;
