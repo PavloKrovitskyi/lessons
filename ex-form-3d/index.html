@@ -16,6 +16,7 @@
     <div class="form-3d__body">
       <div class="form-3d__side form-3d__side--front">
         <div class="form-3d__content">
+          <div class="form-3d__label">Clic card</div>
           <h1 class="form-3d__title">title</h1>
           <div class="form-3d__text">
             <p>
@@ -29,24 +30,27 @@
           <div class="form-3d__wrapper-title">
             <h2 class="form-3d__title">Contact Me</h2>
           </div>
-          <form class="form-3d__form" action="#" method="post">
+          <!-- додано посилання для перевірки надсилання інформації з форми -->
+          <form id="my-form" class="form-3d__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
             <div class="form-3d__items">
               <div class="form-3d__item">
                 <label for="user-name">Your Name :</label>
-                <input id="user-name" name="user-name" type="text" autocomplete="on" placeholder="Helena Gomez" required>
+                <input data-validate="Required field" id="user-name" name="user-name" type="text" autocomplete="off" placeholder="Helena Gomez">
+                <span class="error-message"></span>
               </div>
 
               <div class="form-3d__item">
-                <label>Your E-mail :</label>
-                <input type="email" autocomplete="on" placeholder="example@mail.com" required>
+                <label for="user-email">Your E-mail :</label>
+                <input data-validate="Required field" id="user-email" name="user-email" type="email" autocomplete="off" placeholder="example@mail.com">
+                <span class="error-message"></span>
               </div>
 
               <div class="form-3d__item">
-                <label>Your message :</label>
-                <textarea placeholder="Message"></textarea>
+                <label for="user-message">Your message :</label>
+                <input id="user-message" name="user-message" type="text" autocomplete="off" placeholder="Message">
               </div>
-              
+
             </div>
 
             <button class="form-3d__button" type="submit">done</button>
@@ -58,6 +62,7 @@
   </div>
 
 
+  <script src="script.js"></script>
 </body>
 
 </html>
