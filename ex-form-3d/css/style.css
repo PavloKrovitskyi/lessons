@@ -179,7 +179,7 @@ body {
 }
 /* стилі для полів вводу в стані focus */
 .form-3d__item input:focus {
-  outline: 2px solid white;
+  outline: 2px solid #3e3;
 }
 /* стилі для placeholder */
 .form-3d__item input::placeholder {
