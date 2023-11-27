@@ -21,61 +21,44 @@ for (let i = 0; i < inputWrappers.length; i++) {
   }
 }
 
-// ===
+// =======================================================================================================
+// код для валідації форми
 document.getElementById('my-form').addEventListener('submit', function (event) {
-  // Отримайте всі поля для введення з атрибутом data-validate
   let fields = document.querySelectorAll('[data-validate]');
 
   for (let i = 0; i < fields.length; i++) {
-    // Якщо поле введення порожнє або дорівнює placeholder
-    if (fields[i].value == "" || fields[i].value == fields[i].placeholder) {
-      event.preventDefault();
-      // Отримайте повідомлення про помилку з атрибута data-validate
-      let errorMessage = fields[i].getAttribute('data-validate');
-      // Відобразіть повідомлення про помилку під полем введення
-      let errorElement = fields[i].nextElementSibling;
-      errorElement.textContent = errorMessage;
-      errorElement.style.display = 'block';
+    // додавання елементу span з класом error-message текст береться з значення датаатрибуту data-validate
+    if (!fields[i].nextElementSibling || fields[i].nextElementSibling.className !== 'error-message') {
+      fields[i].insertAdjacentHTML('afterend', '<span class="error-message"></span>');
     }
 
-    // Коли поле для введення отримує фокус
-    fields[i].addEventListener('focus', function () {
-      // Сховайте повідомлення про помилку
+    // перевірка чи поле не пусте і чи не = placeholder
+    if (fields[i].value == "" || fields[i].value == fields[i].placeholder) {
+      event.preventDefault();
+      let errorMessage = fields[i].getAttribute('data-validate');
       let errorElement = fields[i].nextElementSibling;
-      errorElement.style.display = 'none';
+      // поява тексту помилки
+      errorElement.textContent = errorMessage;
+      errorElement.style.visibility = 'visible';
+      errorElement.style.opacity = '1';
+    }
+
+    fields[i].addEventListener('focus', function () {
+      let errorElement = fields[i].nextElementSibling;
+      // зникнення тексту помилки при фокусі на полі вводу
+      errorElement.style.visibility = 'hidden';
+      errorElement.style.opacity = '0';
     });
 
-    // Коли поле для введення втрачає фокус
     fields[i].addEventListener('blur', function () {
-      // Якщо поле введення порожнє або дорівнює placeholder
       if (fields[i].value == "" || fields[i].value == fields[i].placeholder) {
-        // Отримайте повідомлення про помилку з атрибута data-validate
         let errorMessage = fields[i].getAttribute('data-validate');
-        // Відобразіть повідомлення про помилку
         let errorElement = fields[i].nextElementSibling;
+        // поява тексту помилки при втраті фокусу та пустому полі чи плейсхолдері
         errorElement.textContent = errorMessage;
-        errorElement.style.display = 'block';
+        errorElement.style.visibility = 'visible';
+        errorElement.style.opacity = '1';
       }
     });
   }
 });
-
-
-
-// document.getElementById('my-form').addEventListener('submit', function (event) {
-//   // Отримайте всі поля для введення з атрибутом data-validate
-//   let fields = document.querySelectorAll('[data-validate]');
-
-//   for (let i = 0; i < fields.length; i++) {
-//     // Якщо поле введення порожнє
-//     if (fields[i].value == "") {
-//       event.preventDefault();
-//       // Отримайте повідомлення про помилку з атрибута data-validate
-//       let errorMessage = fields[i].getAttribute('data-validate');
-//       // Відобразіть повідомлення про помилку під полем введення
-//       let errorElement = fields[i].nextElementSibling;
-//       errorElement.textContent = errorMessage;
-//       errorElement.style.display = 'block';
-//     }
-//   }
-// });

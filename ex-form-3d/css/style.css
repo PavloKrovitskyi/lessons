@@ -132,16 +132,17 @@ body {
 .error-message {
   position: absolute;
   top: calc(100% + 2px);
-  /* left: 50%;
-  transform: translateX(-50%); */
   right: 0;
-  display: none;
   color: red;
   font-weight: 600;
-  line-height: 1.4;
-  background-color: #a4fda4;
+  font-size: 14px;
+  line-height: 1.3;
+  background-color: #91ff91;
   padding: 4px 6px;
   border-radius: 0 6px 6px 6px;
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
 }
 .error-message::before {
   content: "";
@@ -178,7 +179,8 @@ body {
   border-bottom: 2px solid #3e3;
 }
 /* стилі для полів вводу в стані focus */
-.form-3d__item input:focus {
+.form-3d__item input:focus,
+.form-3d__button:focus {
   outline: 2px solid #3e3;
 }
 /* стилі для placeholder */
