@@ -6,7 +6,10 @@
   font-family: "Inter";
   font-size: 18px;
   color: #37393f;
-  background-color: rgba(8, 14, 28, 0.8);
+  background:
+    url(../img/bg.png) 50% / cover no-repeat,
+    radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%),
+    #211f20;
 }
 
 [class*="__container"] {
@@ -129,17 +132,27 @@
   height: 50px;
   border-radius: 50%;
   background-color: #40ddb6;
+  position: relative;
 }
-.social__item:nth-child(1) .social__link {
-  background: #40ddb6 url("../img//icons/insta.svg") center / 25px 25px no-repeat;
+.social__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #40ddb6;
+  border-radius: 50%;
 }
-.social__item:nth-child(2) .social__link {
-  background: #40ddb6 url("../img//icons/fb.svg") center / 25px 25px no-repeat;
+.social__link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 13px;
 }
-.social__item:nth-child(3) .social__link {
-  background: #40ddb6 url("../img//icons/tw.svg") center / 25px 25px no-repeat;
-}
-.social__item .social__link:hover {
+.social__link:hover::before {
   background-color: rgb(229, 146, 107);
 }
 .experts__info {
@@ -164,3 +177,5 @@
   font-weight: 400;
   line-height: 1.35; /* 24.334px */
 }
+
+
