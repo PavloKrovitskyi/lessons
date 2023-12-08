@@ -94,6 +94,9 @@
 .example__item--white {
   color: #fff; /*встанвлюєм білий колір тексту для картки*/
 }
+.example__item--big .example__title {
+  font-size: 32px;
+}
 
 /*додавання підкладки під текстовий блок для кращої видимості тексту*/
 @media (max-width: 768.98px) {
@@ -155,9 +158,6 @@
   letter-spacing: 0.56px;
   display: inline-block;
 }
-.example__title h2 {
-  max-width: 140px;
-}
 .example__title:not(:last-child) {
   margin-bottom: 10px; /*відступ вниз*/
 }
@@ -191,7 +191,7 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.3;
-  padding: 10px 30px;
+  padding: 10px 24px;
   transition: all 0.4s;
 }
 .example__button:not(:first-child) {
@@ -237,6 +237,7 @@
   background: #3c4242;
   border: 1px solid #3c4242;
   color: #fff;
+  padding: 8px 12px;
 }
 .example__button--white {
   /*модифікатор для повністю білої кнопки без фону*/
