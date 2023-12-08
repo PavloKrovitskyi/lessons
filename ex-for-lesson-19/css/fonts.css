@@ -1,0 +1,51 @@
+/* Підкдючення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700&display=swap");
+
+@font-face {
+  font-family: "Causten";
+  src:
+    url(../fonts/Causten-Regular.woff2) format(woff2),
+    url(../fonts/Causten-Regular.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CoreSansC";
+  src:
+    url(../fonts/CoreSansC-65Bold.woff2) format(woff2),
+    url(../fonts/CoreSansC-65Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CoreSansC";
+  src:
+    url(../fonts/Сoresansc75.woff2) format(woff2),
+    url(../fonts/Сoresansc75.woff) format(woff);
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CoreSansC";
+  src:
+    url(../fonts/Сoresansc45.woff2) format(woff2),
+    url(../fonts/Сoresansc45.woff) format(woff);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Causten";
+  src:
+    url("../fonts/Causten-Bold.woff2") format("woff2"),
+    url("../fonts/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
