@@ -98,7 +98,7 @@
 /*додавання підкладки під текстовий блок для кращої видимості тексту*/
 @media (max-width: 768.98px) {
   .example__item .example__body::before {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
   }
   .example__item--white .example__body::before {
     background-color: rgba(0, 0, 0, 0.2);
