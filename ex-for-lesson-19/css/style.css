@@ -57,7 +57,7 @@
   overflow: hidden;
   color: #3c4242;
 }
-@media (min-width: 725px) {
+@media (min-width: 650px) {
   .example__item {
     grid-column: span 3; /*розмір колонки на ширині в'юпорту більше за 725px*/
     padding: 36px 20px; /*задаєм падінги для картки на ширині в'юпорту більше за 725px*/
@@ -122,8 +122,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 10%;
-  aspect-ratio: 400 / 400;
+  object-position: 40% 5%;
+  /* aspect-ratio: 400 / 400; */
   transition: transform 0.4s;
 
   /*додано scale(1.0001) щоб прибрати артефакт, стрибок зображення після переміщення курсору поза картку
