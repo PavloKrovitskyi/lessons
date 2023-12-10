@@ -52,6 +52,7 @@
   grid-column: span 6; /*розмір колонки на мобільних*/
   display: grid;
   align-items: center; /*центрування контенту по вертикалі*/
+  justify-content: end; /*притискаєм блок з контентом до правої сторони*/
   padding: 15px; /*задаєм падінги для картки*/
   border-radius: 12px;
   overflow: hidden;
@@ -82,8 +83,8 @@
   }
 }
 /* ======================================================================================= */
-.example__item--left-content .example__body {
-  justify-self: start; /*притискаєм блок з контентом до лівої сторони*/
+.example__item--left-content {
+  justify-content: start; /*притискаєм блок з контентом до лівої сторони*/
 }
 .example__item--text-right .example__body {
   text-align: right; /*вирівнюєм текст по правій стороні*/
@@ -135,7 +136,7 @@
   position: relative;
   z-index: 2;
   max-width: 160px; /*найширший контентний блок був у верхньої третьої картки, його ширина 155px я додав ще 5 пікселів бо текст не поміщався*/
-  justify-self: end; /*притискаєм блок з контентом до правої сторони*/
+  /* justify-self: end;  */
 }
 .example__body::before {
   /*підкладка для текстового блоку яка буде видима на телефонах для кращої читабельності тексту*/
