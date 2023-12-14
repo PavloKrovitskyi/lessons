@@ -53,10 +53,11 @@
   display: grid;
   align-items: center; /*центрування контенту по вертикалі*/
   justify-content: end; /*притискаєм блок з контентом до правої сторони*/
-  padding: 15px; /*задаєм падінги для картки*/
+  padding: 15px 10px; /*задаєм падінги для картки*/
   border-radius: 12px;
   overflow: hidden;
   color: #3c4242;
+  background-color: rgb(196, 186, 167);
 }
 @media (min-width: 650px) {
   .example__item {
@@ -94,6 +95,7 @@
 }
 .example__item--white {
   color: #fff; /*встанвлюєм білий колір тексту для картки*/
+  background-color: #728181;
 }
 .example__item--big .example__title {
   font-size: 32px;
@@ -102,10 +104,10 @@
 /*додавання підкладки під текстовий блок для кращої видимості тексту*/
 @media (max-width: 768.98px) {
   .example__item .example__body::before {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
   }
   .example__item--white .example__body::before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
