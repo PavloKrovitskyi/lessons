@@ -57,6 +57,7 @@
   overflow: hidden;
   color: #3c4242;
   background-color: rgb(196, 186, 167);
+  min-height: 240px;
 }
 @media (min-width: 650px) {
   .example__item {
@@ -180,6 +181,9 @@
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
+}
+.example__discount:not(:last-child) {
+  margin-bottom: 15px;
 }
 /* ======================================================================================= */
 /*загальні стилі для кнопок*/
