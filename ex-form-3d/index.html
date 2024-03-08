@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 3D</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+
+
+  <div class="form-3d">
+
+    <div class="form-3d__body">
+      <div class="form-3d__side form-3d__side--front">
+        <div class="form-3d__content">
+          <div class="form-3d__label">Clic card</div>
+          <h1 class="form-3d__title">title</h1>
+          <div class="form-3d__text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo soluta optio cum quisquam. Corporis placeat, illum sed nesciunt, eos ducimus repudiandae quidem voluptatem eligendi, voluptate obcaecati. Asperiores, repellat molestias!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form-3d__side form-3d__side--back">
+        <div class="form-3d__content">
+          <div class="form-3d__wrapper-title">
+            <h2 class="form-3d__title">Contact Me</h2>
+          </div>
+          <!-- додано посилання для перевірки надсилання інформації з форми -->
+          <form id="my-form" class="form-3d__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+            <div class="form-3d__items">
+              <div class="form-3d__item">
+                <label for="user-name">Your Name :</label>
+                <input data-validate="Required field" id="user-name" name="user-name" type="text" autocomplete="off" placeholder="Helena Gomez">
+              </div>
+
+              <div class="form-3d__item">
+                <label for="user-email">Your E-mail :</label>
+                <input data-validate="Required field" id="user-email" name="user-email" type="email" autocomplete="off" placeholder="example@mail.com">
+              </div>
+
+              <div class="form-3d__item">
+                <label for="user-message">Your message :</label>
+                <input id="user-message" name="user-message" type="text" autocomplete="off" placeholder="Message">
+              </div>
+
+            </div>
+
+            <button class="form-3d__button" type="submit">done</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Homework №17</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+
+    <header class="header">
+      <div class="header__container">
+
+        <div class="header__logo logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+
+        <div class="header__menu menu">
+          <div class="menu__burger-icon"></div>
+          <ul class="menu__items menu__items--burger">
+            <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Sale</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">contact us</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link--search-icon">search</a></li>
+          </ul>
+        </div>
+
+        <div class="header__sidebar sidebar">
+          <div class="sidebar__menu menu">
+
+            <ul class="menu__items menu__items--gap">
+              <li class="menu__item"><a href="#" class="menu__link">SIGN IN</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">CREATE AN ACCOUNT</a></li>
+              <li class="menu__item menu__item--border"><a href="#" class="menu__link"><img src="img/favorite-icon.svg" alt="favorite-icon"></a></li>
+              <li class="menu__item menu__item--border user-bar"><a href="#" class="menu__link"><img src="img/basket-icon.svg" alt="basket-icon"></a>
+                <div class="user-bar-body">
+                  <div class="user-bar__link-shopping-cart">
+                    <a href="#">
+                      Shopping Cart
+                      <div class="user-bar__total-cost">
+                        <span>0,00 EUR</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container-next-page">
+
+        <div class="main__block-title">
+          <h2 class="main__title">Checkout</h2>
+          <div class="main__subtitle">There are 3 products in your cart</div>
+        </div>
+
+        <form class="main__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+          <h3 class="form__title">Billing Details</h3>
+
+          <div class="form__body">
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="text" name="first-name" id="first-name" required>
+              <label class="item-block__first-name-lable lable" for="first-name">First name*</label>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="text" name="last-name" id="last-name" required>
+              <label class="item-block__last-name-lable lable" for="last-name">Last name*</label>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="text" name="address" id="address" autocomplete="address-line1" required>
+              <label class="item-block__address-lable lable" for="address">Address*</label>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="text" placeholder="Address line 2" name="address-2" id="address-2" autocomplete="address-line2">
+              <label class="item-block__address-lable" for="address-2"></label>
+            </div>
+
+            <div class="form__item form__item--bgc item-block">
+              <select class="item-block__area-input select-input" name="country" required>
+                <option value="" selected disabled class="item-block__option">Country*</option>
+                <option value="Albania" class="item-block__option">Albania - Албанія</option>
+                <option value="Andorra" class="item-block__option">Andorra - Андорра</option>
+                <option value="Armenia" class="item-block__option">Armenia - Вірменія</option>
+                <option value="Austria" class="item-block__option">Austria - Австрія</option>
+                <option value="Azerbaijan" class="item-block__option">Azerbaijan - Азербайджан</option>
+                <option value="Belarus" disabled class="item-block__option">Belarus - Білорусь</option>
+                <option value="Belgium" class="item-block__option">Belgium - Бельгія</option>
+                <option value="Bulgaria" class="item-block__option">Bulgaria - Болгарія</option>
+                <option value="Croatia" class="item-block__option">Croatia - Хорватія</option>
+                <option value="Cyprus" class="item-block__option">Cyprus - Кіпр</option>
+                <option value="Czechia" class="item-block__option">Czechia - Чехія</option>
+                <option value="Denmark" class="item-block__option">Denmark - Данія</option>
+                <option value="Estonia" class="item-block__option">Estonia - Естонія</option>
+                <option value="Finland" class="item-block__option">Finland - Фінляндія</option>
+                <option value="France" class="item-block__option">France - Франція</option>
+                <option value="Georgia" class="item-block__option">Georgia - Грузія</option>
+                <option value="Germany" class="item-block__option">Germany - Німеччина</option>
+                <option value="Greece" class="item-block__option">Greece - Греція</option>
+                <option value="Hungary" class="item-block__option">Hungary - Угорщина</option>
+                <option value="Iceland" class="item-block__option">Iceland - Ісландія</option>
+                <option value="Ireland" class="item-block__option">Ireland - Ірландія</option>
+                <option value="Italy" class="item-block__option">Italy - Італія</option>
+                <option value="Kazakhstan" class="item-block__option">Kazakhstan - Казахстан</option>
+                <option value="Kosovo" class="item-block__option">Kosovo - Косово</option>
+                <option value="Latvia" class="item-block__option">Latvia - Латвія</option>
+                <option value="Liechtenstein" class="item-block__option">Liechtenstein - Лихтенштейн</option>
+                <option value="Lithuania" class="item-block__option">Lithuania - Литва</option>
+                <option value="Luxembourg" class="item-block__option">Luxembourg - Люксембург</option>
+                <option value="Malta" class="item-block__option">Malta - Мальта</option>
+                <option value="Moldova" class="item-block__option">Moldova - Молдова</option>
+                <option value="Monaco" class="item-block__option">Monaco - Монако</option>
+                <option value="Montenegro" class="item-block__option">Montenegro - Чорногорія</option>
+                <option value="Netherlands" class="item-block__option">Netherlands - Нідерланди</option>
+                <option value="Norway" class="item-block__option">Norway - Норвегія</option>
+                <option value="Poland" class="item-block__option">Poland - Польща</option>
+                <option value="Portugal" class="item-block__option">Portugal - Португалія</option>
+                <option value="Romania" class="item-block__option">Romania - Румунія</option>
+                <option value="" disabled class="item-block__option">Russia - Росія</option>
+                <option value="San-Marino" class="item-block__option">San Marino - Сан-Марино</option>
+                <option value="Serbia" class="item-block__option">SerbiaСербія</option>
+                <option value="Slovakia" class="item-block__option">Slovakia - Словаччина</option>
+                <option value="Slovenia" class="item-block__option">Slovenia - Словенія</option>
+                <option value="Spain" class="item-block__option">Spain - Іспанія</option>
+                <option value="Sweden" class="item-block__option">Sweden - Швеція</option>
+                <option value="Switzerland" class="item-block__option">Switzerland -Швейцарія</option>
+                <option value="Turkey" class="item-block__option">Turkey - Туреччина</option>
+                <option value="Ukraine" class="item-block__option">Ukraine - Україна</option>
+
+              </select>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="text" name="acity-town" id="city-town" required>
+              <label class="item-block__city-town-lable lable" for="city-town">City/Town*</label>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="text" name="postcode-zip01" id="postcode-zip01" required>
+              <label class="item-block__postcode-zip-lable lable" for="postcode-zip01">Postcode / ZIP*</label>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="tel" name="phone01" id="phone01" maxlength="15" required>
+              <label class="item-block__phone-lable lable" for="phone01">Phone*</label>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="text" name="postcode-zip02" id="postcode-zip02" required>
+              <label class="item-block__postcode-zip-lable lable" for="postcode-zip02">Postcode / ZIP*</label>
+            </div>
+
+            <div class="form__item item-block">
+              <input class="item-block__area-input" type="tel" name="phone02" id="phone02" maxlength="15" required>
+              <label class="item-block__phone-lable lable" for="phone02">Phone*</label>
+            </div>
+
+            <div class="form__item form__item--width-textarea block-item ">
+              <textarea class="block-item__textarea textarea-input" name="additional-information" id="additional-information" autocomplete="off" minlength="3" cols="30" rows="15">Additional information
+              </textarea>
+            </div>
+
+          </div>
+
+          <div class="form__checkbox-block checkbox-block">
+            <div class="checkbox-block__item">
+              <input class="checkbox-block__area-input" type="checkbox" name="create-account" id="create-account" checked>
+              <label class="checkbox-block__checkbox-lable" for="create-account">Create Account</label>
+            </div>
+
+            <div class="checkbox-block__item">
+              <input class="checkbox-block__area-input" type="checkbox" name="ship-different-address" id="ship-different-address">
+              <label class="checkbox-block__checkbox-lable" for="ship-different-address">Ship to a different address?</label>
+            </div>
+          </div>
+
+          <div class="form__cupon-block cupon-block">
+            <h3 class="cupon-block__title-cupon">Apply Coupon to get discount!</h3>
+
+            <div class="cupon-block__input item-block">
+              <input class="item-block__area-input item-block__area-input--width" placeholder="Coupon code" type="text" name="cupon" id="cupon" autocomplete="off" minlength="5">
+              <button class="cupon-block__button" type="submit">Apply Code</button>
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content content">
+          <div class="content__row">
+            <div class="content__item">Free Shipping</div>
+            <div class="content__item">Customer Love</div>
+            <div class="content__item">Easy Returns</div>
+            <div class="content__item">Secure Payment</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

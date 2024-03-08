@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Приклад форми для Lesson 16</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">Я шапка</header>
+    <main class="page">
+
+      <section class="page__section">
+        <div class="page__container">
+          <h1 class="page__title">Contact Us</h1>
+          <h2 class="page__sub-title">Request A Call Back !</h2>
+
+          <!-- додаємо форму -->
+          <form class="page__form form" id="some-form" enctype="multipart/form-data" method="GET" action="#">
+            <!-- додаємо тіло форми де будуть всі поля -->
+            <div class="form__body">
+
+              <!-- додаємо один за одним поля в обгортці,
+                не робимо жодних додатковик конструкцій по типу два поля в одній обгортці з класами row чи line -->
+              <div class="form__item">
+                <input autocomplete="on" name="name" placeholder="Your Name" type="text">
+              </div>
+
+              <div class="form__item">
+                <input name="mail" placeholder="Email Address" type="email">
+              </div>
+
+              <div class="form__item">
+                <input autocomplete="off" name="phone" placeholder="Phone Number" type="tel">
+              </div>
+
+              <div class="form__item">
+                <input name="mail" placeholder="Subject" type="email">
+              </div>
+
+              <!-- додаємо модифікатор для textarea чи окремий клас щоб стилізувати його  -->
+              <div class="form__item form__item--textarea">
+                <textarea class="form__textarea" name="Message..." placeholder="Message..."></textarea>
+              </div>
+
+            </div>
+            <!-- кнопку виносимо поза form__body щоб потім не писати зайвого коду для стилізації -->
+            <button form="some-form" type="submit" class="form__button">submit</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">Я підвал</footer>
+  </div>
+</body>
+
+</html>

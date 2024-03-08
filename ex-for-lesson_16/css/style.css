@@ -1,0 +1,146 @@
+/*=======Підключення шрифтів=======*/
+@import url("fonts.css");
+
+/*=======Скидання стилів=======*/
+@import url("reset.css");
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+/* загальні стилі для усіх "__container" однаково */
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+/* загальні стилі для шапки та підвалу */
+header,
+footer {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  padding: 30px 0;
+  text-transform: uppercase;
+  background-color: #37393f;
+}
+/* ======================================= */
+/* загальні стилі для секції з формою */
+.page__section {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 18px;
+  color: #37393f;
+}
+/* стилі для заголовку */
+.page__title {
+  font-weight: 500;
+  line-height: 1.3;
+}
+/* додаєм марджин лише якщо елемент не є останнім */
+.page__title:not(:last-child) {
+  margin-bottom: 16px;
+}
+/* додаєм квадратик псевдоелементом */
+.page__title::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  background-color: #40ddb6;
+}
+.page__sub-title {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 121%; /* 48.4px */
+}
+/* додаєм марджин лише якщо елемент не є останнім */
+.page__sub-title:not(:last-child) {
+  margin-bottom: 40px;
+}
+.page__form {
+}
+.form {
+}
+/* задаємо стилі для флекс контейнеру та потрібні відступи за допомогою gap */
+.form__body {
+  display: flex;
+  /* дозволяєм перенесення на наступний рядок */
+  flex-wrap: wrap;
+  row-gap: 28px;
+  /* додаєм від'ємний марджин щоб компенсувати падінг для елементів всередині body */
+  margin: 0 -17.5px;
+}
+/* додаєм марджин лише якщо елемент не є останнім */
+.form__body:not(:last-child) {
+  margin-bottom: 50px;
+}
+/* додаєм стилі для флекс елементів */
+.form__item {
+  flex: 1 1 50%;
+  /* додаємо падінги щоб зробити відступи */
+  padding: 0 17.5px;
+  /* тепер елементи форми повністю адаптивні і будуть адаптивно звужуватись, 
+  тому треба додати min-width, щоб була контрольлвана перебудова елементів */
+  min-width: 290px;
+  line-height: 1.3;
+}
+/* задаємо стилі для input */
+.form__item input {
+  width: 100%;
+  /* встановлюємо падінги для input */
+  padding: 21px 40px 20px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+/* задаємо розміри для обгортки textarea та встановлюєм ширину в 100% 
+щоб вона була на всю ширину батьківського блоку */
+.form__item--textarea {
+  min-height: 222px;
+  flex: 1 1 100%;
+}
+/* звертаємось до тегу textarea та задаєм потрібні стилі */
+.form__item--textarea textarea {
+  width: 100%;
+  height: 100%;
+  /* встановлюємо падінги для textarea */
+  padding: 21px 40px 20px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  resize: vertical;
+  border-radius: 0 !important;
+}
+textarea:focus,
+input:focus {
+  outline: 2px solid #6b77e5; /* зробили обводку рамки --focusі-- фіолетовиою */
+}
+/* стилі для кнопки */
+.form__button {
+  padding: 21px 61px 22px 61px;
+  line-height: 1.22;
+  background-color: #6b77e5;
+  border: 1px solid transparent;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition:
+    color 0.5s,
+    background-color 0.5s,
+    border 0.5s;
+}
+.form__button:hover {
+  background-color: transparent;
+  border: 1px solid #6b77e5;
+  color: #6b77e5;
+}

@@ -1,0 +1,450 @@
+
+@import url("reset.css");
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  background-color: white;
+  min-height: 100%;
+  width: 100%;
+  overflow: clip;
+  background-image: url(../img/sky.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.road{
+  height: 200px;
+  width: 500%;
+  display: block;
+  background-image: url(../img/road.jpg);
+  background-color: black;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  animation: road 17s linear infinite;
+}
+
+.city{
+  background-image: url(../img/sity3.webp);
+  background-repeat: repeat-x;
+  height: 230px;
+  width: 600%;
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  animation: city 20s linear infinite;
+}
+
+/* авто, водій, тіні, світло переднє та заднє */
+.car{
+  width: 500px;
+  position: relative;
+  left: 23.2%;
+  top: 700px;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: all 2s;
+  animation: car 5s linear infinite;
+}
+.car img{
+  position: relative;
+  max-width: 100%;
+  animation: car-up-down 1s linear infinite;
+}
+.car__shadow{
+  position: absolute;
+  bottom: 55%;
+  left: 10%;
+  width: 400px;
+  height: 50px;
+  box-shadow: 0 35px 45px -10px rgba(140, 12, 165, 1);
+  z-index: -1;
+  animation: car-neon 7s linear infinite;
+}
+.car__driver{
+  position: absolute;
+  bottom: 185px;
+  left: 190px;
+  width: 120px;
+  z-index: 3;
+}
+.car__back-lights{
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  width: 30px;
+  height: 25px;
+  border-radius: 10px 5px;
+  background-color: rgba(216, 20, 20, 0.8);
+  transform: skew(-20deg);
+  z-index: 5;
+  /* transition: all 0.1s ease-in; */
+}
+.car__back-lights::before{
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: -50px;
+  display: block;
+  width: 150px;
+  height: 100px;
+}
+
+.car__front-lights{
+  position: absolute;
+  right: 68px;
+  bottom: 60%;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(238, 230, 230, 0.5);
+  border-radius: 0px 90px 25px 140px;
+  transform: rotate(-15deg);
+}
+.car__front-lights::after{
+  position: absolute;
+  top: -370px;
+  left: 300px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 900px solid rgba(236, 226, 226, 0.386);
+  transform: rotate(110deg);
+}
+.car__front-lights:hover{
+  transform: scale(1.5);
+  box-shadow: 300px 25px 90px 170px rgba(248, 246, 246, 0.8);
+}
+.car__back-lights:hover {
+  box-shadow: -110px 60px 130px 70px rgb(248, 6, 6), -60px 80px 70px 40px rgb(212, 150, 150);
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* колеса */
+.wheels{
+  position: absolute;
+  left: 44.5%;
+  bottom: 110px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+.wheels img{
+  max-width: 65px;
+  animation: wheels 1s linear infinite;
+}
+.wheels__front {
+  position: absolute;
+  left: 126%;
+}
+.wheels__back {
+  position: absolute;
+  left: -108%;
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+.gif-homer img{
+  max-width: 155px;
+}
+.gif-homer{
+  position: absolute;
+  left: 50%;
+  bottom: 120px;
+  z-index: 2;
+}
+
+.dialog {
+  background: #fff;
+  position: absolute;
+  left: 270px;
+  bottom: 270px;
+  width: 160px;
+  font-size: 20px;
+  line-height: 150%; /* 30/20 */
+  padding: 15px;
+  border: 5px solid #666;
+  border-radius: 10px;
+}
+
+
+/* форма для діалогу */
+.dialog:before,
+.dialog:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.dialog:before {
+  left: 10px;
+  border-width: 30px 30px 0 0;
+  border-color: #666 transparent transparent transparent;
+}
+.dialog:after {
+  left: 15px;
+  border-width: 18px 18px 0 0;
+  border-color: #fff transparent transparent transparent;
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+.dialog--homer{
+  left: 110px;
+  bottom: 200px;
+}
+
+.next-page__link{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 20px;
+  background-color: rgb(17, 18, 75);
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+
+/* анімація дороги */
+@keyframes road {
+  100% {
+    transform: translateX(-7400px);
+  }
+}
+
+/* анімація міста */
+@keyframes city {
+  100% {
+    transform: translateX(-2400px);
+  }
+}
+
+/* анімація авто */
+@keyframes car {
+  0% {
+    transform: rotateY(-10deg);
+    left: 15%;
+  }
+
+  50% {
+    transform: rotateY(10deg);
+    left: 20%;
+  }
+
+  100% {
+    transform: rotateY(-10deg);
+    left: 15%;
+  }
+}
+
+@keyframes car-up-down{
+  0%{
+    transform: translateY(-1px);
+  }
+  25%{
+    transform: translateY(2px);
+  }
+  100%{
+    transform: translateY(-1px);
+  }
+}
+
+/* анімація коліс */
+@keyframes wheels {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* анімація неону */
+@keyframes car-neon{
+  0% {
+  box-shadow: 0 35px 45px -10px rgb(252, 235, 3);
+  }
+  20%{
+    box-shadow: 0 35px 45px -10px rgb(255, 1, 1);
+  }
+  40%{
+    box-shadow: 0 35px 45px -10px rgb(2, 15, 199);
+  }
+  60%{
+    box-shadow: 0 35px 45px -10px rgb(0, 210, 247);
+  }
+  80%{
+    box-shadow: 0 35px 45px -10px rgb(21, 255, 0);
+  }
+  100%{
+    box-shadow: 0 35px 45px -10px rgb(188, 255, 3);
+  }
+}
+
+/* _________________________________________ */
+/* практика до уроку 12 */
+
+.transform__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+hr{
+  border: 2px solid white;
+  margin-bottom: 50px;
+}
+
+.transform__title{
+  margin-bottom: 30px;
+}
+
+.title {
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid white;
+}
+
+.row{
+  display: flex;
+  padding: 30px 0;
+}
+
+.block{
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-color: aqua;
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s all;
+}
+
+.block__content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 150px;
+  min-height: 30px;
+  padding: 4px 0;
+  text-align: center;
+  background-color: violet;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.block__name-position{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 150px;
+  min-height: 30px;
+  padding: 4px 0;
+  text-align: center;
+  background-color: violet;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+/* рядки */
+
+/* перший рядок */
+.transform__row-1 {
+  justify-content: space-between;
+}
+.transform__block-x:hover {
+  transform: translateX(-30%);
+}
+.transform__block-y:hover {
+  transform: translateY(30%);
+}
+.transform__block-scale-minus:hover{
+  transform: scale(0.5);
+}
+.transform__block-rotate:hover{
+transform: rotate(360deg);
+}
+
+/* другий рядок */
+.transform__row-2 {
+  justify-content: space-around;
+}
+.transform__block-scale-plus:hover{
+transform: scale(1.5);
+}
+.transform__block-scale-x:hover{
+  transform: scaleX(1.5);
+}
+.transform__block-scale-minus-y:hover{
+transform: scaleY(0.5);
+}
+
+/* третій рядок */
+.transform__row-3 {
+  justify-content: space-between;
+}
+.transform__block-skew:hover{
+transform: skew(20deg, 20deg);
+}
+.transform__block-skew-x:hover{
+  transform: skewX(30deg);
+}
+.transform__block-skew-y:hover{
+  transform: skewY(30deg);
+}
+.transform__block-skew-x-minus-y:hover {
+  transform: skew(30deg, -30deg);
+}
+
+/* четвертий рядок */
+.transform__row-4 {
+  justify-content: space-around;
+}
+.transform__block-translate-scale-rotate:hover {
+  transform: translate(-50%) scale(1.5) rotate(360deg);
+}
+.transform__block-scale-rotate:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+.transform__block-translate-rotate:hover {
+  transform: translate(50%, 20%) rotate(720deg);
+}
+
+/* рядок 3d */
+.transform__row-3d {
+  justify-content: space-between;
+  /* transform-style: preserve-3d; */
+  perspective: 200px;
+  perspective-origin: top center;
+}
+
+.transform__block-translate-3d:hover {
+  transform: translate3d(-20%, -20%, 40px);
+}
+.transform__block-rotate-3d:hover {
+  transform: rotate3d(10, 90, 1, -30deg);
+}
+
+.transform__block:hover {
+  transform: rotate3d(-100, -10, 1, -30deg) translate3d(-20%, -20%, 10px);
+}

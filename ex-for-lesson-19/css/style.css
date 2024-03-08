@@ -1,0 +1,277 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+  font-family: "Causten", sans-serif;
+  font-size: 14px;
+  color: #37393f;
+  background:
+    url(../img/bg-1.jpg) 50% / cover no-repeat,
+    radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%),
+    #211f20;
+}
+
+.header,
+.footer {
+  padding: 20px 0;
+}
+.footer__title,
+.header__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 767.98px) {
+  .footer__title,
+  .header__title {
+    font-size: 40px;
+  }
+}
+/* ======================================================================================= */
+.example {
+  padding: 100px 0px;
+}
+.example__container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* ======================================================================================= */
+.example__items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+/* ======================================================================================= */
+.example__item {
+  position: relative; /**/
+  grid-column: span 6; /*розмір колонки на мобільних*/
+  display: grid;
+  align-items: center; /*центрування контенту по вертикалі*/
+  justify-content: end; /*притискаєм блок з контентом до правої сторони*/
+  padding: 15px 10px; /*задаєм падінги для картки*/
+  border-radius: 12px;
+  overflow: hidden;
+  color: #3c4242;
+  background-color: rgb(196, 186, 167);
+  min-height: 240px;
+}
+@media (min-width: 650px) {
+  .example__item {
+    grid-column: span 3; /*розмір колонки на ширині в'юпорту більше за 725px*/
+    padding: 36px 20px; /*задаєм падінги для картки на ширині в'юпорту більше за 725px*/
+  }
+  .example__item.example__item--big {
+    grid-column: span 3; /*item на три клітинки на ширині в'юпорту більше за 725px*/
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+@media (min-width: 1100px) {
+  .example__item {
+    grid-column: span 2; /*за замовчуванням усі item на дві клітинки*/
+  }
+  .example__item--big {
+    padding-right: 15.74%; /*відсотковий падінг зправа вирахувано: розмір падінгу поділено на ширину картки (15.737705%; /* 96/610 та заокруглено */
+  }
+}
+@media (any-hover: hover) {
+  .example__item:hover img {
+    transform: scale(1.08);
+  }
+}
+/* ======================================================================================= */
+.example__item--left-content {
+  justify-content: start; /*притискаєм блок з контентом до лівої сторони*/
+}
+.example__item--text-right .example__body {
+  text-align: right; /*вирівнюєм текст по правій стороні*/
+}
+.example__item--text-right .example__icon {
+  margin-right: 46px; /*коли в блоку текст притиснутий вправо зміщуєм кнопку марджином*/
+}
+.example__item--white {
+  color: #fff; /*встанвлюєм білий колір тексту для картки*/
+  background-color: #728181;
+}
+.example__item--big .example__title {
+  font-size: 32px;
+}
+
+/*додавання підкладки під текстовий блок для кращої видимості тексту*/
+@media (max-width: 768.98px) {
+  .example__item .example__body::before {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .example__item--white .example__body::before {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ======================================================================================= */
+
+/* єзробив картинку з обгорткою та позиціонував її відносно картки */
+.example__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.example__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 40% 5%;
+  transition: transform 0.4s;
+
+  /*додано scale(1.0001) щоб прибрати артефакт, стрибок зображення після переміщення курсору поза картку
+  закоментуйте рядок нижче щоб побачити артефакт при hover, він добре видимий на останніх двох великих картках*/
+  transform: scale(1.0001);
+}
+/* ======================================================================================= */
+.example__body {
+  position: relative; /*задаєм position: relative та потрібний z-index щоб розмістити текст над картиною*/
+  z-index: 2;
+  max-width: 160px; /*найширший контентний блок був у верхньої третьої картки, його ширина 155px я додав ще 5 пікселів бо текст не поміщався*/
+  /* justify-self: end;  */
+}
+.example__body::before {
+  /*підкладка для текстового блоку яка буде видима на телефонах для кращої читабельності тексту*/
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  filter: blur(12px); /*фільтер який робить фон розпливчастим без чітких контурів*/
+  z-index: -1; /*вказано -1 щоб елемент був під текстом*/
+  border-radius: 20px;
+}
+/* ======================================================================================= */
+.example__title {
+  font-family: "CoreSansC", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.37; /* 137.255% */
+  letter-spacing: 0.56px;
+  display: inline-block;
+}
+.example__title:not(:last-child) {
+  margin-bottom: 10px; /*відступ вниз*/
+}
+@media (any-hover: hover) {
+  .example__title:hover {
+    text-decoration: underline;
+  }
+}
+/* ======================================================================================= */
+.example__label {
+  font-weight: 600;
+  line-height: 1.3;
+}
+.example__label:not(:last-child) {
+  margin-bottom: 10px; /*відступ вниз*/
+}
+.example__discount {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.example__discount:not(:last-child) {
+  margin-bottom: 15px;
+}
+/* ======================================================================================= */
+/*загальні стилі для кнопок*/
+.example__button {
+  border-radius: 4px;
+  border: 2px solid #3c4242;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  padding: 10px 24px;
+  transition: all 0.4s;
+}
+.example__button:not(:first-child) {
+  margin-top: 80px;
+}
+@media (min-width: 768.98px) {
+  .example__button:not(:first-child) {
+    margin-top: 80px;
+  }
+}
+/* ======================================================================================= */
+.example__button--arrow {
+  position: relative;
+}
+.example__button--arrow::before {
+  content: "";
+  position: absolute;
+  top: -53px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 23px;
+  background: url("../img/arrow.svg") 50% / cover no-repeat;
+  animation: shake 2.2s ease-in-out infinite; /*додав анімацію для стрілочки*/
+  filter: drop-shadow(-15px 8px 2px #000); /*додав тінь для стрілочки*/
+  pointer-events: none;
+}
+/* стилі для анімації іконки стрілочки */
+@keyframes shake {
+  0% {
+    transform: translate(-50%, 15px);
+  }
+  80% {
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    transform: translate(-50%, 15px);
+  }
+}
+/* ======================================================================================= */
+.example__button--bg-color {
+  /*модифікатор для кнопки з іншим фоновим кольором*/
+  background: #3c4242;
+  border: 1px solid #3c4242;
+  color: #fff;
+  padding: 8px 12px;
+}
+.example__button--white {
+  /*модифікатор для повністю білої кнопки без фону*/
+  border: 1px solid #fff;
+}
+.example__button--bg-color:not(:last-child) {
+  /*відступ вниз у верхньої кнопки в другій картці*/
+  margin-bottom: 10px;
+}
+@media (min-width: 768.98px) {
+  .example__button--bg-color:not(:last-child) {
+    /*відступ вниз у верхньої кнопки в другій картці*/
+    margin-bottom: 28px;
+  }
+}
+
+/* порядок написання стилів для hover має значення, спочатку пишуться стилі для усіх кнопок а потім стилі для модифікатору
+  якщо написати навпаки навпаки то стилі модифікатору для hover не будуть працювати бо будуть*/
+@media (any-hover: hover) {
+  .example__button:hover {
+    /*основні стилі для кнопки при hover*/
+    background: #3c4242;
+    color: #fff;
+  }
+  .example__button--bg-color:hover {
+    /*стилі для модифікованої кнопки при hover*/
+    background: #fff;
+    border: 1px solid #3c4242;
+    color: #3c4242;
+  }
+}
+/* ======================================================================================= */

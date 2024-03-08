@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:regular,400,500,600,700&display=swap);
+
+@import url(reset.css);
+
+@font-face {
+  font-family: 'Pobeda';
+  src: url('../fonts/Pobeda-Bold.woff2') format('woff2'),
+    url('../fonts/Pobeda-Bold.woff') format('woff');
+  font-weight: bold;
+  font-display: swap;
+}
+
+*{
+  background-color: black;
+  color: white;
+}
+/* Arial, Helvetica,
+sans-serif; це запасний шрифт */
+body{
+  padding: 30px 0 0 80px;
+  line-height: 1.3;
+}
+body{
+  font-family:'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+h1,
+h2 {
+  font-family: 'Pobeda', Arial, Helvetica, sans-serif;
+  font-size: 45px ;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: aqua;
+}
+
+h2, h3{
+  color: greenyellow;
+  text-shadow: 6px 4px 15px, -6px -4px 20px greenyellow ;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3{
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+p{
+  text-indent: 50px;
+}
+li {
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+color: brown;
+line-height: 1.5;
+}
+
+.link-wiki{
+  color: rgb(127, 127, 248);
+  text-decoration: underline;
+}
+
+.header__container{
+width: 1400px;
+text-align: justify;
+}
+
+.header-text p{
+  color: yellow;
+}
+
+.naw-container{
+  padding: 30px 0 30px 0;
+  border: 1px solid;
+  width: 600px;
+  text-align: center;
+}
+
+.nawigation{
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-indent: 0;
+}
+
+.game-proces__container{
+  width: 1400px;
+  text-align: justify;
+}
+
+.img__container{
+  padding: 40px 0 40px 0;
+}
+
+.plot__container{
+  text-align: justify;
+  width: 1400px;
+}
+
+.parussia{
+  text-decoration: line-through;
+}
+
+.info p{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  color:cyan;
+}
+
+.info__container {
+  text-align: justify;
+  width: 1400px;
+  font-style: italic;
+}
+
+.name {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+.parussia {
+text-decoration: line-through;
+color: darkgoldenrod;
+}
+
+.up, .down{
+  color: red;
+  padding: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+
