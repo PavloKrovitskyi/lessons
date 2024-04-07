@@ -1,0 +1,78 @@
+
+@import url("reset.css");
+
+body {
+  font-family: "Roboto" sans-serif;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+main {
+  margin-bottom: 40px;
+}
+.header,
+.footer {
+  padding: 30px;
+  font-size: 35px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rebeccapurple;
+}
+
+.block {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1244px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.body {
+  font-size: 16px;
+  max-width: 600px;
+  margin-right: 129px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 30px 0;
+  padding: 121px 0;
+}
+.title {
+  margin-bottom: 24px;
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.text {
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px 12px 40px;
+  background: #fff url("../img/icon-button.png") 20px center / 16px no-repeat;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.56;
+  color: #0d1216;
+}
+
+.image {
+  vertical-align: middle;
+  max-width: 515px;
+  display: inline-block;
+}
