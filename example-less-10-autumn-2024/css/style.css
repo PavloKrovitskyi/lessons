@@ -1,0 +1,182 @@
+@import "reset.css";
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+
+main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  padding: 0 0.9375rem; /* 15/16 */
+}
+/*==============================================================================================================*/
+.header {
+  padding: 30px 0;
+}
+.header__container {
+  text-align: center;
+}
+.header__container h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+/*==============================================================================================================*/
+
+/*==============================================================================================================*/
+/* загальний блок */
+.block-images {
+  background-color: #28293e;
+  padding: 30px 0;
+}
+
+/* контейнер */
+.block-images__container {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* блок відносно якого позиціонуються елементи */
+.block-images__content {
+  position: relative;
+  min-height: 601px;
+}
+
+/* велике коло по центру блоку */
+.block-images__content::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  background-color: #32334c;
+}
+
+/*======================================================*/
+/* елементи всередині блоку */
+.block-images__image {
+  position: relative;
+}
+/* стилі для картинки ноута та дівчини */
+.block-images__image img {
+  position: relative;
+  border-radius: 6px;
+}
+
+/* фонова фігура для картинок ноута та дівчини */
+.block-images__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 246px;
+  height: 305px;
+  border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
+  background-color: #b550f8;
+}
+
+/* модифікатор для лівої верхньоїкатинки від якого вказуємо стилі для картинки та псевдоелементів */
+.block-images__image--top-left {
+  padding: 24px 0 0 21px;
+}
+.block-images__image--top-left img {
+  max-width: 255px;
+}
+.block-images__image--top-left::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 51px);
+  left: 0;
+  width: 142px;
+  height: 73px;
+  background: url("../img/block-images/arrow-spiral.svg") center / contain no-repeat;
+}
+
+/* можифікатор для правої нижньої картинки від якого вказуємо стилі для картинки та псевдоелементів */
+.block-images__image--right-bottom {
+  position: absolute;
+  bottom: 108px;
+  right: 0;
+  padding-top: 36px;
+}
+.block-images__image--right-bottom::before {
+  background-color: #f7cc47;
+}
+.block-images__image--right-bottom::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 43px);
+  left: -10px;
+  width: 94px;
+  height: 50px;
+  background: url("../img/block-images/arrow.svg") center / contain no-repeat;
+}
+/*======================================================*/
+
+/* картинки декору */
+.block-images__decore {
+  position: absolute;
+}
+
+/* модифікатор для картинки з зірочками */
+.block-images__decore--circle {
+  top: 40px;
+  left: 53.3%;
+  width: 112px;
+  height: 112px;
+  padding: 28px;
+  border-radius: 50%;
+  background-color: #ef6d58;
+  text-align: center;
+}
+.block-images__decore--circle img {
+  max-width: 100%;
+}
+.block-images__decore--circle::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: calc(100% + 42px); /*або 154px*/
+  width: 112px;
+  height: 82px;
+  background: url("../img/block-images/spiral.svg") center / contain no-repeat;
+}
+
+/* модифікатор для прямокутної картинки */
+.block-images__decore--rectangle {
+  left: 56px;
+  bottom: 59px;
+}
+.block-images__decore--rectangle img {
+  max-width: 214px;
+}
+
+/*==============================================================================================================*/
+/*==============================================================================================================*/
+.footer {
+  padding: 30px 0;
+}
+.footer__container {
+  max-width: 900px;
+  text-align: center;
+}
+.footer__text p:not(:last-child) {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footer__images img:not(:last-child) {
+  margin-right: 30px;
+}
+.footer__images:not(:last-child) {
+  margin-bottom: 30px;
+}
