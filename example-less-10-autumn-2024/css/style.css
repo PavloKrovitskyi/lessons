@@ -121,6 +121,9 @@ main {
   height: 50px;
   background: url("../img/block-images/arrow.svg") center / contain no-repeat;
 }
+.block-images__image--right-bottom img {
+  max-width: 246px;
+}
 /*======================================================*/
 
 /* картинки декору */
